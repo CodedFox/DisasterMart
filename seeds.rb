@@ -39,7 +39,11 @@ def parse_data
         end
 
         # create location object
-        locationKey = 1
+        locationKey = locations[row[6]]
+        if locationKey.nil?
+            locationKey = locations.size + 1
+            locations[row[6]] = locationKey
+        end
 
         # create start date object
         startDateTime = DateTime.parse(row[5])
@@ -94,4 +98,4 @@ end
 
 data = parse_data
 
-print data[:facts].size.to_s + "\n"
+# print data[:facts][0][:evacuated].to_s+ "\n"
