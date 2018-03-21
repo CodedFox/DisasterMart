@@ -38,6 +38,7 @@ Create table LOCATION(
 	LocationKey int primary key,
 	City varchar(100),
 	Province varchar(100),
+	Region varchar(100),
 	Country varchar(100),
 	Canada boolean
 );
