@@ -46,15 +46,15 @@ Create table LOCATION(
 
 Create table COSTS(
 	CostsKey int primary key,
-	EstimatedTotalCost int,
+	EstimatedTotalCost bigint,
 	NormalizedTotalCost numeric,
-	FederalDFAAPayments int,
-	ProvincialDFAAPayments int,
-	ProvincialDepartmentPayments int,
-	MunicipalCosts int,
-	OGDCosts int,
-	InsurancePayments int,
-	NGOPayments int
+	FederalDFAAPayments bigint,
+	ProvincialDFAAPayments bigint,
+	ProvincialDepartmentPayments bigint,
+	MunicipalCosts bigint,
+	OGDCosts bigint,
+	InsurancePayments bigint,
+	NGOPayments bigint
 );
 
 Create table FACT(
