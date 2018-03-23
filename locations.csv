@@ -1,0 +1,639 @@
+1,Ottawa,Ontario,Central Canada,Canada,true
+2,Grand Forks,British Columbia,West Coast,Canada,true
+3,Wellington,British Columbia,West Coast,Canada,true
+4,Cranberry,British Columbia,West Coast,Canada,true
+5,Saint John River Basin,New Brunswick,Atlantic Canada,Canada,true
+6,Fernie,British Columbia,West Coast,Canada,true
+7,Frank,Alberta,Prairie Provinces,Canada,true
+8,Carbonado,British Columbia,West Coast,Canada,true
+9,Edmonton,Alberta,Prairie Provinces,Canada,true
+10,Calgary,Alberta,Prairie Provinces,Canada,true
+11,Upper Arrow Lake,British Columbia,West Coast,Canada,true
+12,Toronto,Ontario,Central Canada,Canada,true
+13,Red River,Manitoba,Prairie Provinces,Canada,true
+14,unknown,Nova Scotia,Atlantic Canada,Canada,true
+15,Spences Bridge,British Columbia,West Coast,Canada,true
+16,Vancouver Island,British Columbia,West Coast,Canada,true
+17,Quebec City,Quebec,Central Canada,Canada,true
+18,Notre-Dame-de-la-Salette,Quebec,Central Canada,Canada,true
+19,Chester,New Brunswick,Atlantic Canada,Canada,true
+20,Burnaby,British Columbia,West Coast,Canada,true
+21,unknown,unknown,Prairie Provinces,Canada,true
+22,Spanish River,Ontario,Central Canada,Canada,true
+23,Rogers Pass,British Columbia,West Coast,Canada,true
+24,St-Alphonse-de-Bagotville,Quebec,Central Canada,Canada,true
+25,Coucoucache,Quebec,Central Canada,Canada,true
+26,Cochrane,Ontario,Central Canada,Canada,true
+27,Regina,Saskatchewan,Prairie Provinces,Canada,true
+28,unknown,unknown,Eastern Canada,Canada,true
+29,unknown,unknown,"Lakes Huron, Erie and Ontario",Canada,true
+30,unknown,unknown,Newfoundland coast,Canada,true
+31,unknown,Newfoundland and Labrador,Atlantic Canada,Canada,true
+32,St. Lawrence River,Quebec,Central Canada,Canada,true
+33,Hillcrest,Alberta,Prairie Provinces,Canada,true
+34,North Saskatchewan River,Alberta,Prairie Provinces,Canada,true
+35,Nanaimo,British Columbia,West Coast,Canada,true
+36,Cooper Mine,British Columbia,West Coast,Canada,true
+37,unknown,unknown,Northeastern New Brunswick,Canada,true
+38,Winnipeg,Manitoba,Prairie Provinces,Canada,true
+39,New Waterford,Nova Scotia,Atlantic Canada,Canada,true
+40,unknown,unknown,Northwestern British Columbia,Canada,true
+41,Halifax,Nova Scotia,Atlantic Canada,Canada,true
+42,unknown,unknown,Across Canada,Canada,true
+43,Pictou County,Nova Scotia,Atlantic Canada,Canada,true
+44,Trenton,Ontario,Central Canada,Canada,true
+45,unknown,unknown,"British Columbia, off coast",Canada,true
+46,unknown,unknown,Southwestern Ontario,Canada,true
+47,unknown,unknown,Southeastern Saskatchewan,Canada,true
+48,Icelandic River,Manitoba,Prairie Provinces,Canada,true
+49,Saint John River,New Brunswick,Atlantic Canada,Canada,true
+50,Montreal,Quebec,Central Canada,Canada,true
+51,Canning,Nova Scotia,Atlantic Canada,Canada,true
+52,Waswanipi reserve,Quebec,Central Canada,Canada,true
+53,unknown,unknown,Southern Alberta,Canada,true
+54,Grand Falls,Newfoundland and Labrador,Atlantic Canada,Canada,true
+55,Upper Gagetown,New Brunswick,Atlantic Canada,Canada,true
+56,Lake St. Clair,Ontario,Central Canada,Canada,true
+57,unknown,unknown,Saskatchewan and Alberta,Canada,true
+58,Emerson,Manitoba,Prairie Provinces,Canada,true
+59,Goulais River,Ontario,Central Canada,Canada,true
+60,unknown,unknown,Northern British Columbia,Canada,true
+61,Whitedog Lake,Ontario,Central Canada,Canada,true
+62,Come by Chance,Newfoundland and Labrador,Atlantic Canada,Canada,true
+63,Duck Mountain,Manitoba,Prairie Provinces,Canada,true
+64,Saint-Romuald,Quebec,Central Canada,Canada,true
+65,Linton,Quebec,Central Canada,Canada,true
+66,Sarnia,Ontario,Central Canada,Canada,true
+67,Lethbridge,Alberta,Prairie Provinces,Canada,true
+68,Louiseville,Quebec,Central Canada,Canada,true
+69,unknown,unknown,Central and Southern Alberta,Canada,true
+70,Norman Wells,Northwest Territories,Northern Canada,Canada,true
+71,unknown,unknown,Ontario and Manitoba,Canada,true
+72,Courtland,Ontario,Central Canada,Canada,true
+73,Lesser Slave Lake region,Alberta,Prairie Provinces,Canada,true
+74,Saguenay region,Quebec,Central Canada,Canada,true
+75,Saint-Basile-le-Grand,Quebec,Central Canada,Canada,true
+76,Dundas,Ontario,Central Canada,Canada,true
+77,Albany,Ontario,Central Canada,Canada,true
+78,Niagara Falls,Ontario,Central Canada,Canada,true
+79,unknown,unknown,Yukon to Ontario,Canada,true
+80,Dryden,Ontario,Central Canada,Canada,true
+81,Montmartre,Saskatchewan,Prairie Provinces,Canada,true
+82,Liard River,Northwest Territories,Northern Canada,Canada,true
+83,unknown,unknown,Northern Manitoba,Canada,true
+84,Radisson,Quebec,Central Canada,Canada,true
+85,Saint-Jacques,Quebec,Central Canada,Canada,true
+86,Sudbury,Ontario,Central Canada,Canada,true
+87,unknown,unknown,Southwestern British Columbia,Canada,true
+88,Gulf of St. Lawrence,Quebec,Central Canada,Canada,true
+89,Saint-Li??onard d'Aston,Quebec,Central Canada,Canada,true
+90,Ungava Peninsula,Quebec,Central Canada,Canada,true
+91,Old Crow,Yukon,Northern Canada,Canada,true
+92,Harrow,Ontario,Central Canada,Canada,true
+93,unknown,unknown,British Columbia to Ontario,Canada,true
+94,Banff,Alberta,Prairie Provinces,Canada,true
+95,Hagersville,Ontario,Central Canada,Canada,true
+96,Vancouver Harbour,British Columbia,West Coast,Canada,true
+97,La Baie,Quebec,Central Canada,Canada,true
+98,Sainte-Anne des Plaines,Quebec,Central Canada,Canada,true
+99,St.-Amable,Quebec,Central Canada,Canada,true
+100,unknown,unknown,Western Alberta,Canada,true
+101,Woodstock,New Brunswick,Atlantic Canada,Canada,true
+102,Northumberland Strait,Nova Scotia,Atlantic Canada,Canada,true
+103,unknown,unknown,Southern Ontario,Canada,true
+104,unknown,unknown,Joe Rich and Southern British Columbia,Canada,true
+105,Oka,Quebec,Central Canada,Canada,true
+106,Madeleine Islands,Quebec,Central Canada,Canada,true
+107,unknown,unknown,Southern Alberta and Saskatchewan,Canada,true
+108,Bugaboo Glacier Provincial Park,British Columbia,West Coast,Canada,true
+109,Notre-Dame de Pierreville,Quebec,Central Canada,Canada,true
+110,Chaudii??re River,Quebec,Central Canada,Canada,true
+111,Niverville,Manitoba,Prairie Provinces,Canada,true
+112,Betsiamites,Quebec,Central Canada,Canada,true
+113,Red Deer,Alberta,Prairie Provinces,Canada,true
+114,St. Lazare,Manitoba,Prairie Provinces,Canada,true
+115,unknown,unknown,unknown,Saudi Arabia,false
+116,Off Cape Beale,British Columbia,West Coast,Canada,true
+117,Kinsella,Alberta,Prairie Provinces,Canada,true
+118,unknown,unknown,Southern New Brunswick,Canada,true
+119,Maskinongi??,Quebec,Central Canada,Canada,true
+120,Jarvis,Ontario,Central Canada,Canada,true
+121,Near the North Pole,Nunavut,Northern Canada,Canada,true
+122,Canso,Nova Scotia,Atlantic Canada,Canada,true
+123,Vernon,British Columbia,West Coast,Canada,true
+124,unknown,unknown,Maritime Provinces,Canada,true
+125,Grand Coulee,Saskatchewan,Prairie Provinces,Canada,true
+126,unknown,unknown,Central Ontario,Canada,true
+127,Haines,Alberta,Prairie Provinces,Canada,true
+128,Corunna,Ontario,Central Canada,Canada,true
+129,Montri??al,Quebec,Central Canada,Canada,true
+130,Elmira,Ontario,Central Canada,Canada,true
+131,Port au Choix,Newfoundland and Labrador,Atlantic Canada,Canada,true
+132,Peace River,Alberta,Prairie Provinces,Canada,true
+133,Sainte-Brigitte-de-Laval,Quebec,Central Canada,Canada,true
+134,Port-aux-Basques,Newfoundland and Labrador,Atlantic Canada,Canada,true
+135,Hay River,Northwest Territories,Northern Canada,Canada,true
+136,Plymouth,Nova Scotia,Atlantic Canada,Canada,true
+137,Attawapiskat,Ontario,Central Canada,Canada,true
+138,Longlac,Ontario,Central Canada,Canada,true
+139,unknown,unknown,Prairies Provinces and Ontario,Canada,true
+140,Oakville,Manitoba,Prairie Provinces,Canada,true
+141,Yukon Rivers,Yukon,Northern Canada,Canada,true
+142,Yellowknife,Northwest Territories,Northern Canada,Canada,true
+143,Avalon,Newfoundland and Labrador,Atlantic Canada,Canada,true
+144,St. John's,Newfoundland and Labrador,Atlantic Canada,Canada,true
+145,unknown,unknown,Prince Edward Island and New Brunswick,Canada,true
+146,Upper Saint John River Valley,New Brunswick,Atlantic Canada,Canada,true
+147,Shubenacadie,Nova Scotia,Atlantic Canada,Canada,true
+148,unknown,Saskatchewan,Prairie Provinces,Canada,true
+149,unknown,Quebec,Central Canada,Canada,true
+150,Swan River,Manitoba,Prairie Provinces,Canada,true
+151,Truro,Nova Scotia,Atlantic Canada,Canada,true
+152,Windsor,Ontario,Central Canada,Canada,true
+153,unknown,unknown,Quebec and Ontario,Canada,true
+154,Kirkland Lake,Ontario,Central Canada,Canada,true
+155,unknown,unknown,Alberta to Maritimes,Canada,true
+156,Southern,Ontario,Central Canada,Canada,true
+157,Plaster Rock,New Brunswick,Atlantic Canada,Canada,true
+158,unknown,unknown,Southern Manitoba,Canada,true
+159,unknown,British Columbia,West Coast,Canada,true
+160,Sydney,Nova Scotia,Atlantic Canada,Canada,true
+161,unknown,unknown,Southwestern Manitoba,Canada,true
+162,Aylmer,Quebec,Central Canada,Canada,true
+163,Salmon Arm,British Columbia,West Coast,Canada,true
+164,unknown,unknown,Avalon area of Newfoundland and Labrador,Canada,true
+165,Poplar Bay,Alberta,Prairie Provinces,Canada,true
+166,Hervey Junction,Quebec,Central Canada,Canada,true
+167,Blanc Sablon,Quebec,Central Canada,Canada,true
+168,unknown,unknown,North Central Saskatchewan,Canada,true
+169,Western,Manitoba,Prairie Provinces,Canada,true
+170,unknown,unknown,Southeastern British Columbia,Canada,true
+171,unknown,unknown,Sahtu Region of the Northwest Territories,Canada,true
+172,Burin Peninsula,Newfoundland and Labrador,Atlantic Canada,Canada,true
+173,Hamilton,Ontario,Central Canada,Canada,true
+174,Sunny Valley,Alberta,Prairie Provinces,Canada,true
+175,Grande Prairie,Alberta,Prairie Provinces,Canada,true
+176,South Dumfries,Ontario,Central Canada,Canada,true
+177,Flat Bay,Newfoundland and Labrador,Atlantic Canada,Canada,true
+178,Grey County,Ontario,Central Canada,Canada,true
+179,Timmins,Ontario,Central Canada,Canada,true
+180,Atikokan,Ontario,Central Canada,Canada,true
+181,Lesser Slave Lake area,Alberta,Prairie Provinces,Canada,true
+182,Nechako River,British Columbia,West Coast,Canada,true
+183,unknown,unknown,Southwest Alberta,Canada,true
+184,Bay of Fundy,New Brunswick,Atlantic Canada,Canada,true
+185,Durham,Ontario,Central Canada,Canada,true
+186,unknown,unknown,Southern British Columbia,Canada,true
+187,unknown,unknown,South-Central Saskatchewan,Canada,true
+188,unknown,unknown,Ontario and Quebec,Canada,true
+189,Assiniboine,Manitoba,Prairie Provinces,Canada,true
+190,Northwest of Matagami,Quebec,Central Canada,Canada,true
+191,unknown,unknown,Northwest Ontario,Canada,true
+192,Iroquois Falls,Ontario,Central Canada,Canada,true
+193,Hummingbird Creek,British Columbia,West Coast,Canada,true
+194,Les i??boulements,Quebec,Central Canada,Canada,true
+195,Wood Buffalo National Park,Alberta,Prairie Provinces,Canada,true
+196,unknown,unknown,"Ontario, Quebec and New Brunswick",Canada,true
+197,unknown,unknown,45 miles southwest of the islands of Saint-Pierre-et-Miquelon,unknown,false
+198,Kangiqsualujjuaq,Quebec,Central Canada,Canada,true
+199,unknown,unknown,Quebec and New Brunswick,Canada,true
+200,unknown,unknown,Eastern Ontario and Quebec,Canada,true
+201,Swan Hills,Alberta,Prairie Provinces,Canada,true
+202,unknown,unknown,Northern Ontario,Canada,true
+203,Portage la Prairie,Manitoba,Prairie Provinces,Canada,true
+204,Tibbet Lake,Northwest Territories,Northern Canada,Canada,true
+205,Greater Vancouver Area,British Columbia,West Coast,Canada,true
+206,Peggy's Cove,Nova Scotia,Atlantic Canada,Canada,true
+207,Barrie,Ontario,Central Canada,Canada,true
+208,Southern,British Columbia,West Coast,Canada,true
+209,Taylor,British Columbia,West Coast,Canada,true
+210,Terrace,British Columbia,West Coast,Canada,true
+211,East of Lake Winnipeg,Manitoba,Prairie Provinces,Canada,true
+212,Melita,Manitoba,Prairie Provinces,Canada,true
+213,Thamesville,Ontario,Central Canada,Canada,true
+214,La Ronge,Saskatchewan,Prairie Provinces,Canada,true
+215,Beardmore,Ontario,Central Canada,Canada,true
+216,Burwash Landing,Yukon,Northern Canada,Canada,true
+217,Kenora,Ontario,Central Canada,Canada,true
+218,Badger,Newfoundland and Labrador,Atlantic Canada,Canada,true
+219,Clearwater,Alberta,Prairie Provinces,Canada,true
+220,Drummondville,Quebec,Central Canada,Canada,true
+221,unknown,unknown,"Across Toronto, Canada, and internationally",Canada,true
+222,unknown,Prince Edward Island,Atlantic Canada,Canada,true
+223,Balmoral,New Brunswick,Atlantic Canada,Canada,true
+224,Vancouver,British Columbia,West Coast,Canada,true
+225,Little Saskatchewan First Nation Reserve,Manitoba,Prairie Provinces,Canada,true
+226,Glacier National Park,British Columbia,West Coast,Canada,true
+227,St-Hilaire,Quebec,Central Canada,Canada,true
+228,Passmore,British Columbia,West Coast,Canada,true
+229,Pine Lake,Alberta,Prairie Provinces,Canada,true
+230,Chetwynd,British Columbia,West Coast,Canada,true
+231,Walkerton,Ontario,Central Canada,Canada,true
+232,Vanguard,Saskatchewan,Prairie Provinces,Canada,true
+233,unknown,unknown,Eastern and Northern Coastline of New Brunswick,Canada,true
+234,Peace River area,British Columbia,West Coast,Canada,true
+235,Morley,Ontario,Central Canada,Canada,true
+236,unknown,unknown,Northeast and Central British Columbia,Canada,true
+237,New York City,unknown,unknown,Canada,true
+238,unknown,unknown,Southern coast of Newfoundland,Canada,true
+239,Brookdale,Manitoba,Prairie Provinces,Canada,true
+240,Notre-Dame-du-Lac,Quebec,Central Canada,Canada,true
+241,unknown,unknown,Northern Alberta and Conklin,Canada,true
+242,Montreal Lake,Saskatchewan,Prairie Provinces,Canada,true
+243,Attawapiskat First Nation,Ontario,Central Canada,Canada,true
+244,Municipalities of Ignace,Ontario,Central Canada,Canada,true
+245,Southeast,Manitoba,Prairie Provinces,Canada,true
+246,Kingsville,Ontario,Central Canada,Canada,true
+247,Peerless Lake,Alberta,Prairie Provinces,Canada,true
+248,Turnor Lake,Saskatchewan,Prairie Provinces,Canada,true
+249,Hawes/Patuanak,Saskatchewan,Prairie Provinces,Canada,true
+250,Crutwell,Saskatchewan,Prairie Provinces,Canada,true
+251,Nemiscau region,Quebec,Central Canada,Canada,true
+252,Near community of Sheshatshui,Newfoundland and Labrador,Atlantic Canada,Canada,true
+253,Kee-Way-Win FN; Townships of Terrace Bay,Ontario,Central Canada,Canada,true
+254,Brantford,Ontario,Central Canada,Canada,true
+255,unknown,unknown,Western Canada,Canada,true
+256,Tyendinaga Township First Nation,Ontario,Central Canada,Canada,true
+257,Oxford,Nova Scotia,Atlantic Canada,Canada,true
+258,unknown,unknown,West Coast of Newfoundland,Canada,true
+259,unknown,Manitoba,Prairie Provinces,Canada,true
+260,Eastern Passage,Nova Scotia,Atlantic Canada,Canada,true
+261,unknown,unknown,Southeastern British Columbia and Southwestern Alberta,Canada,true
+262,The Bois-Francs,Quebec,Central Canada,Canada,true
+263,Ontario,unknown,unknown,Canada,true
+264,unknown,unknown,Vancouver Island and Southwestern British Columbia,Canada,true
+265,unknown,unknown,South Central Manitoba,Canada,true
+266,The Pas,Manitoba,Prairie Provinces,Canada,true
+267,Estevan,Saskatchewan,Prairie Provinces,Canada,true
+268,Edmundston,New Brunswick,Atlantic Canada,Canada,true
+269,unknown,unknown,East Indian Ocean,unknown,false
+270,Kings County,Prince Edward Island,Atlantic Canada,Canada,true
+271,North Vancouver,British Columbia,West Coast,Canada,true
+272,Kashechewan,Ontario,Central Canada,Canada,true
+273,Fort Good Hope,Northwest Territories,Northern Canada,Canada,true
+274,Bridgewater,Nova Scotia,Atlantic Canada,Canada,true
+275,Chisasibi,Quebec,Central Canada,Canada,true
+276,Chibougamau,Quebec,Central Canada,Canada,true
+277,Cumberland House Cree First Nation,Saskatchewan,Prairie Provinces,Canada,true
+278,Kelowna,British Columbia,West Coast,Canada,true
+279,Stephenville,Newfoundland and Labrador,Atlantic Canada,Canada,true
+280,Abbotsford,British Columbia,West Coast,Canada,true
+281,Glovertown,Newfoundland and Labrador,Atlantic Canada,Canada,true
+282,Delta,British Columbia,West Coast,Canada,true
+283,Red Earth,Saskatchewan,Prairie Provinces,Canada,true
+284,Slocan River,British Columbia,West Coast,Canada,true
+285,Mistissini,Quebec,Central Canada,Canada,true
+286,Aklavik,Northwest Territories,Northern Canada,Canada,true
+287,Tumbler Ridge,British Columbia,West Coast,Canada,true
+288,Nordegg,Alberta,Prairie Provinces,Canada,true
+289,Cariboo-Chilcotin,British Columbia,West Coast,Canada,true
+290,Galiano Island,British Columbia,West Coast,Canada,true
+291,Boisbriand,Quebec,Central Canada,Canada,true
+292,Amherstburg,Ontario,Central Canada,Canada,true
+293,Sainte-Anne-des-Plaines,Quebec,Central Canada,Canada,true
+294,Saint-Joseph et Valli??e,Quebec,Central Canada,Canada,true
+295,Russell,Ontario,Central Canada,Canada,true
+296,South Coast,British Columbia,West Coast,Canada,true
+297,Maple Ridge,British Columbia,West Coast,Canada,true
+298,Selkirk,Manitoba,Prairie Provinces,Canada,true
+299,Red Earth First Nation,Saskatchewan,Prairie Provinces,Canada,true
+300,Gatineau,Quebec,Central Canada,Canada,true
+301,Fishing Lake,Saskatchewan,Prairie Provinces,Canada,true
+302,Bellefleur,New Brunswick,Atlantic Canada,Canada,true
+303,Sept-i??les,Quebec,Central Canada,Canada,true
+304,Happy Valley - Goose Bay,Newfoundland and Labrador,Atlantic Canada,Canada,true
+305,Dartmouth,Nova Scotia,Atlantic Canada,Canada,true
+306,Elie,Manitoba,Prairie Provinces,Canada,true
+307,South Indian Lake,Manitoba,Prairie Provinces,Canada,true
+308,Kootenay,British Columbia,West Coast,Canada,true
+309,Natuashish,Newfoundland and Labrador,Atlantic Canada,Canada,true
+310,Gaspi??,Quebec,Central Canada,Canada,true
+311,Matane,Quebec,Central Canada,Canada,true
+312,Prince George,British Columbia,West Coast,Canada,true
+313,Saint John,New Brunswick,Atlantic Canada,Canada,true
+314,Port Bruce,Ontario,Central Canada,Canada,true
+315,unknown,New Brunswick,Atlantic Canada,Canada,true
+316,Belleville,Ontario,Central Canada,Canada,true
+317,Paddockwood,Saskatchewan,Prairie Provinces,Canada,true
+318,Trent Hills,Ontario,Central Canada,Canada,true
+319,Albany River,Ontario,Central Canada,Canada,true
+320,James Bay,Ontario,Central Canada,Canada,true
+321,Newbrook,Alberta,Prairie Provinces,Canada,true
+322,Pukatawagan,Manitoba,Prairie Provinces,Canada,true
+323,Norway House,Manitoba,Prairie Provinces,Canada,true
+324,High River,Alberta,Prairie Provinces,Canada,true
+325,Huntingdon,Quebec,Central Canada,Canada,true
+326,Monti??ri??gie,Quebec,Central Canada,Canada,true
+327,Lanaudii??re,Quebec,Central Canada,Canada,true
+328,unknown,unknown,Northern Saskatchewan,Canada,true
+329,Deschambault Lake,Saskatchewan,Prairie Provinces,Canada,true
+330,Daniels Harbour,Newfoundland and Labrador,Atlantic Canada,Canada,true
+331,La Tuque,Quebec,Central Canada,Canada,true
+332,Zama City,Alberta,Prairie Provinces,Canada,true
+333,Kingston,Ontario,Central Canada,Canada,true
+334,unknown,unknown,Northeastern Saskatchewan,Canada,true
+335,White Rock,British Columbia,West Coast,Canada,true
+336,East Kooteney Elk River-Watershed Region,British Columbia,West Coast,Canada,true
+337,Baie Verte Peninsula,Newfoundland and Labrador,Atlantic Canada,Canada,true
+338,Peninsulas of Avalon,Newfoundland and Labrador,Atlantic Canada,Canada,true
+339,Municipalities of Pipestone,Manitoba,Prairie Provinces,Canada,true
+340,Pangnirtung,Nunavut,Northern Canada,Canada,true
+341,Queens County,Prince Edward Island,Atlantic Canada,Canada,true
+342,Colchester,Nova Scotia,Atlantic Canada,Canada,true
+343,Gander,Newfoundland and Labrador,Atlantic Canada,Canada,true
+344,unknown,unknown,South-Central Manitoba,Canada,true
+345,Greater Vancouver,British Columbia,West Coast,Canada,true
+346,Khyex River,British Columbia,West Coast,Canada,true
+347,unknown,unknown,"Across Canada, largely in the Greater Toronto area",Canada,true
+348,unknown,unknown,Maritime provinces,Canada,true
+349,Eyjafjallaji??kull glacier,unknown,unknown,Iceland,false
+350,Rock Creek,Yukon,Northern Canada,Canada,true
+351,Wemotaci reserve,Quebec,Central Canada,Canada,true
+352,Tuktoyaktuk,Northwest Territories,Northern Canada,Canada,true
+353,Lorette River,Quebec,Central Canada,Canada,true
+354,Notre-Dame-des-Prairies,Quebec,Central Canada,Canada,true
+355,Val-des-Bois,Quebec,Central Canada,Canada,true
+356,Di??li??age,Quebec,Central Canada,Canada,true
+357,Cranberry Portage,Manitoba,Prairie Provinces,Canada,true
+358,unknown,unknown,Nova Scotia and New Brunswick,Canada,true
+359,unknown,unknown,New Brunswick and Nova Scotia,Canada,true
+360,unknown,unknown,Martime Provinces,Canada,true
+361,Meat Cove,Nova Scotia,Atlantic Canada,Canada,true
+362,Yarmouth County,Nova Scotia,Atlantic Canada,Canada,true
+363,Baie-Verte,New Brunswick,Atlantic Canada,Canada,true
+364,Lambton County,Ontario,Central Canada,Canada,true
+365,Midland,Ontario,Central Canada,Canada,true
+366,unknown,unknown,"Across Canada, concentrated in Saskatchewan and Alberta",Canada,true
+367,Leamington,Ontario,Central Canada,Canada,true
+368,North Battleford,Saskatchewan,Prairie Provinces,Canada,true
+369,Port-au-Prince,unknown,unknown,Haiti,false
+370,unknown,unknown,Southern Saskatchewan,Canada,true
+371,Southeast,Yukon,Northern Canada,Canada,true
+372,Merville,British Columbia,West Coast,Canada,true
+373,unknown,unknown,"Kicking Horse Pass, Alberta - British Columbia border",Canada,true
+374,Winisk,Ontario,Central Canada,Canada,true
+375,unknown,unknown,North-central Alberta,Canada,true
+376,unknown,unknown,Southcentral Quebec,Canada,true
+377,County of Thorhild,Alberta,Prairie Provinces,Canada,true
+378,Britannia Beach,British Columbia,West Coast,Canada,true
+379,Perth-Andover,New Brunswick,Atlantic Canada,Canada,true
+380,Comox,British Columbia,West Coast,Canada,true
+381,Glengarry Hospital,British Columbia,West Coast,Canada,true
+382,Chapleau,Ontario,Central Canada,Canada,true
+383,Saguenay River Valley,Quebec,Central Canada,Canada,true
+384,Cross Lake,Manitoba,Prairie Provinces,Canada,true
+385,Haileybury,Ontario,Central Canada,Canada,true
+386,Roseau River First Nation,Manitoba,Prairie Provinces,Canada,true
+387,Echo Harbour,British Columbia,West Coast,Canada,true
+388,Dawson,Yukon,Northern Canada,Canada,true
+389,Rideau,Quebec,Central Canada,Canada,true
+390,Pike Lake,Saskatchewan,Prairie Provinces,Canada,true
+391,Coalmont,British Columbia,West Coast,Canada,true
+392,Liverpool,Nova Scotia,Atlantic Canada,Canada,true
+393,unknown,unknown,St. Lawrence River,Canada,true
+394,Capreol,Ontario,Central Canada,Canada,true
+395,Crerar,Ontario,Central Canada,Canada,true
+396,unknown,unknown,New Brunswick and Eastern Quebec,Canada,true
+397,Baffin Bay,Nunavut,Northern Canada,Canada,true
+398,unknown,unknown,Manitoba to Atlantic Canada,Canada,true
+399,Moose River,Nova Scotia,Atlantic Canada,Canada,true
+400,St-Gregoire-de-Montmercy,Quebec,Central Canada,Canada,true
+401,Rainy River,Ontario,Central Canada,Canada,true
+402,Sydney Mines,Nova Scotia,Atlantic Canada,Canada,true
+403,unknown,unknown,Great Lakes: Lake Ontario,Canada,true
+404,Gogama,Ontario,Central Canada,Canada,true
+405,unknown,unknown,"Newfoundland, off coast",Canada,true
+406,Charlottetown,Prince Edward Island,Atlantic Canada,Canada,true
+407,Almonte,Ontario,Central Canada,Canada,true
+408,Aldershot,Ontario,Central Canada,Canada,true
+409,Saint-Donat,Quebec,Central Canada,Canada,true
+410,Windsor to Tecumseh,Ontario,Central Canada,Canada,true
+411,Okanagan Valley,British Columbia,West Coast,Canada,true
+412,Elgin,New Brunswick,Atlantic Canada,Canada,true
+413,Bristol,New Brunswick,Atlantic Canada,Canada,true
+414,Dugald,Manitoba,Prairie Provinces,Canada,true
+415,Red Deer River,Alberta,Prairie Provinces,Canada,true
+416,Mississagi,Ontario,Central Canada,Canada,true
+417,Fraser River,British Columbia,West Coast,Canada,true
+418,Off Queen Charlotte Islands,British Columbia,West Coast,Canada,true
+419,Saint-Joachim,Quebec,Central Canada,Canada,true
+420,Rimouski,Quebec,Central Canada,Canada,true
+421,Canoe River,British Columbia,West Coast,Canada,true
+422,Bow River,British Columbia,West Coast,Canada,true
+423,Sumas,British Columbia,West Coast,Canada,true
+424,Coniston,Ontario,Central Canada,Canada,true
+425,Stephenville Crossing,Newfoundland and Labrador,Atlantic Canada,Canada,true
+426,Eastend,Saskatchewan,Prairie Provinces,Canada,true
+427,Lake Superior,Ontario,Central Canada,Canada,true
+428,unknown,unknown,Central Alberta,Canada,true
+429,White Point Beach,Nova Scotia,Atlantic Canada,Canada,true
+430,Moose Jaw,Saskatchewan,Prairie Provinces,Canada,true
+431,unknown,unknown,Manitoba and Saskatchewan,Canada,true
+432,Lake Louise,Alberta,Prairie Provinces,Canada,true
+433,Nicolet,Quebec,Central Canada,Canada,true
+434,Springhill,Nova Scotia,Atlantic Canada,Canada,true
+435,Mounte Slesse,British Columbia,West Coast,Canada,true
+436,Peace River,British Columbia,West Coast,Canada,true
+437,St. Lawrence,Newfoundland and Labrador,Atlantic Canada,Canada,true
+438,Murdochville,Quebec,Central Canada,Canada,true
+439,Thetford Mines,Quebec,Central Canada,Canada,true
+440,Prince Rupert,British Columbia,West Coast,Canada,true
+441,Amaranth,Manitoba,Prairie Provinces,Canada,true
+442,Lanark,Ontario,Central Canada,Canada,true
+443,Revelstoke,British Columbia,West Coast,Canada,true
+444,The Battery,Newfoundland and Labrador,Atlantic Canada,Canada,true
+445,unknown,unknown,South Central Saskatchewan,Canada,true
+446,Chedabucto Bay,Nova Scotia,Atlantic Canada,Canada,true
+447,unknown,unknown,Southern and Central Ontario,Canada,true
+448,Kootenay Region,British Columbia,West Coast,Canada,true
+449,McBride,British Columbia,West Coast,Canada,true
+450,Toulnustouc River,Quebec,Central Canada,Canada,true
+451,unknown,unknown,Southeastern New Brunswick,Canada,true
+452,unknown,Ontario,Central Canada,Canada,true
+453,unknown,unknown,"British Columbia, Pacific coast",Canada,true
+454,unknown,unknown,West coast British Columbia,Canada,true
+455,Hay River Township,Northwest Territories,Northern Canada,Canada,true
+456,Sainte-Thi??ri??se-de-Blainville,Quebec,Central Canada,Canada,true
+457,Saint-Joachim-de-Tourelle,Quebec,Central Canada,Canada,true
+458,Ramsey Arm,British Columbia,West Coast,Canada,true
+459,Port Alberni,British Columbia,West Coast,Canada,true
+460,unknown,unknown,Southern Prairies,Canada,true
+461,Hope,British Columbia,West Coast,Canada,true
+462,Ocean Falls,British Columbia,West Coast,Canada,true
+463,Granduc Mine,British Columbia,West Coast,Canada,true
+464,Lasalle,Quebec,Central Canada,Canada,true
+465,Northeast of Vancouver,British Columbia,West Coast,Canada,true
+466,Lake Huron,Ontario,Central Canada,Canada,true
+467,unknown,unknown,St. Lawrence counties of Quebec,Canada,true
+468,Toyko,unknown,unknown,Japan,false
+469,Baie-Comeau,Quebec,Central Canada,Canada,true
+470,Crowsnest Pass,British Columbia,West Coast,Canada,true
+471,Huron,Ontario,Central Canada,Canada,true
+472,Camp Creek,British Columbia,West Coast,Canada,true
+473,Lambeth,Ontario,Central Canada,Canada,true
+474,unknown,unknown,Southwestern and Southern Ontario,Canada,true
+475,Dunnville,Ontario,Central Canada,Canada,true
+476,Porteau,British Columbia,West Coast,Canada,true
+477,Qu'Appelle River Basin,Saskatchewan,Prairie Provinces,Canada,true
+478,Iroquois,New Brunswick,Atlantic Canada,Canada,true
+479,Saint-Jean,Quebec,Central Canada,Canada,true
+480,Fraser Canyon,British Columbia,West Coast,Canada,true
+481,Saint-Jean-Vianney,Quebec,Central Canada,Canada,true
+482,Maniwaki,Quebec,Central Canada,Canada,true
+483,unknown,unknown,Western Prairies,Canada,true
+484,Kootenay region,British Columbia,West Coast,Canada,true
+485,Victoriaville,Quebec,Central Canada,Canada,true
+486,unknown,unknown,Southwestern Quebec,Canada,true
+487,Richelieu River,Quebec,Central Canada,Canada,true
+488,Corner Brook,Newfoundland and Labrador,Atlantic Canada,Canada,true
+489,Smoky,Alberta,Prairie Provinces,Canada,true
+490,Harbour Breton,Newfoundland and Labrador,Atlantic Canada,Canada,true
+491,Cedoux,Saskatchewan,Prairie Provinces,Canada,true
+492,unknown,unknown,"Newfoundland, Prince Edward Island and Nova Scotia",Canada,true
+493,unknown,unknown,Central and Northern Alberta,Canada,true
+494,unknown,unknown,Central and Southern Manitoba,Canada,true
+495,Cambridge/Waterloo Region,Ontario,Central Canada,Canada,true
+496,Rae Point,Northwest Territories,Northern Canada,Canada,true
+497,Southwestern,Alberta,Prairie Provinces,Canada,true
+498,Devastation Glacier,British Columbia,West Coast,Canada,true
+499,Saint Bonaventure,Quebec,Central Canada,Canada,true
+500,i??les-de-la-Madeleine,Quebec,Central Canada,Canada,true
+501,Region of Quebec City,Quebec,Central Canada,Canada,true
+502,Pincher Creek,Alberta,Prairie Provinces,Canada,true
+503,Western,Nova Scotia,Atlantic Canada,Canada,true
+504,Niagara Peninsula,Ontario,Central Canada,Canada,true
+505,Assiniboine River,Manitoba,Prairie Provinces,Canada,true
+506,Fundy Isles,New Brunswick,Atlantic Canada,Canada,true
+507,Cranbrook,British Columbia,West Coast,Canada,true
+508,Moncton,New Brunswick,Atlantic Canada,Canada,true
+509,unknown,unknown,New Brunswick and Quebec,Canada,true
+510,Petty Harbour,Newfoundland and Labrador,Atlantic Canada,Canada,true
+511,Fort McMurray,Alberta,Prairie Provinces,Canada,true
+512,St-Eustache,Quebec,Central Canada,Canada,true
+513,Eastman,Quebec,Central Canada,Canada,true
+514,Milk River,Alberta,Prairie Provinces,Canada,true
+515,unknown,Northwest Territories,Northern Canada,Canada,true
+516,Millwoods,Alberta,Prairie Provinces,Canada,true
+517,Golden,British Columbia,West Coast,Canada,true
+518,Glace Bay,Nova Scotia,Atlantic Canada,Canada,true
+519,North York,Ontario,Central Canada,Canada,true
+520,Red River region,Manitoba,Prairie Provinces,Canada,true
+521,Chapais region of Chibougamau,Quebec,Central Canada,Canada,true
+522,Woodstock,Ontario,Central Canada,Canada,true
+523,Drumheller,Alberta,Prairie Provinces,Canada,true
+524,unknown,unknown,Southern Quebec,Canada,true
+525,Mississauga,Ontario,Central Canada,Canada,true
+526,Belmoral Mine,Quebec,Central Canada,Canada,true
+527,Webb,Saskatchewan,Prairie Provinces,Canada,true
+528,Red Lake,Ontario,Central Canada,Canada,true
+529,Gaspi??sie Region,Quebec,Central Canada,Canada,true
+530,unknown,unknown,Southwest British Columbia,Canada,true
+531,Squamish River,British Columbia,West Coast,Canada,true
+532,Sussex,New Brunswick,Atlantic Canada,Canada,true
+533,Southeastern,Ontario,Central Canada,Canada,true
+534,unknown,unknown,off the Northern coast of Newfoundland,Canada,true
+535,Westfield,New Brunswick,Atlantic Canada,Canada,true
+536,Squamish,British Columbia,West Coast,Canada,true
+537,Medonte,Ontario,Central Canada,Canada,true
+538,Labrador City,Newfoundland and Labrador,Atlantic Canada,Canada,true
+539,Lodgepole,Alberta,Prairie Provinces,Canada,true
+540,unknown,unknown,Off the coast of Newfoundland,Canada,true
+541,Orillia,Ontario,Central Canada,Canada,true
+542,Sherbrooke,Quebec,Central Canada,Canada,true
+543,Dunsmuir,British Columbia,West Coast,Canada,true
+544,Montreal Sainte-Rose,Quebec,Central Canada,Canada,true
+545,Curling,Newfoundland and Labrador,Atlantic Canada,Canada,true
+546,North shore of St. Lawrence River,Quebec,Central Canada,Canada,true
+547,Reeces Corners,Ontario,Central Canada,Canada,true
+548,unknown,unknown,"Central, southern, and western Newfoundland",Canada,true
+549,Cincinnati. Ohio,unknown,unknown,Canada,true
+550,upper Richelieu River,Quebec,Central Canada,Canada,true
+551,Cape Breton Island,Nova Scotia,Atlantic Canada,Canada,true
+552,Gaspi??sie,Quebec,Central Canada,Canada,true
+553,Avalon Peninsula,Newfoundland and Labrador,Atlantic Canada,Canada,true
+554,Fort Frances,Ontario,Central Canada,Canada,true
+555,unknown,unknown,Northeast Saskatchewan,Canada,true
+556,Lower Fraser River Valley,British Columbia,West Coast,Canada,true
+557,unknown,unknown,"South, Central and Western Manitoba",Canada,true
+558,Chesley,Ontario,Central Canada,Canada,true
+559,unknown,unknown,Eastern Ontario and Western Quebec,Canada,true
+560,London,Ontario,Central Canada,Canada,true
+561,unknown,Alberta,Prairie Provinces,Canada,true
+562,Smiths Falls,Ontario,Central Canada,Canada,true
+563,Pemberton area,British Columbia,West Coast,Canada,true
+564,unknown,unknown,West Coast of British Columbia,Canada,true
+565,Chatham,Ontario,Central Canada,Canada,true
+566,unknown,unknown,North Atlantic near west coast of Ireland,unknown,false
+567,Stoney Creek,Ontario,Central Canada,Canada,true
+568,Hinton,Alberta,Prairie Provinces,Canada,true
+569,Lake Erie,Ontario,Central Canada,Canada,true
+570,Hopeville to Barrie,Ontario,Central Canada,Canada,true
+571,unknown,unknown,Eastern Ontario and Southwestern Quebec,Canada,true
+572,unknown,unknown,East Central British Columbia,Canada,true
+573,Riviere Chaudii??re,Quebec,Central Canada,Canada,true
+574,Valrita-Harty,Ontario,Central Canada,Canada,true
+575,400 km off Cape Race,Newfoundland and Labrador,Atlantic Canada,Canada,true
+576,Blue River,British Columbia,West Coast,Canada,true
+577,unknown,unknown,unknown,Libya,false
+578,Slave Lake,Alberta,Prairie Provinces,Canada,true
+579,Hall Lake,Saskatchewan,Prairie Provinces,Canada,true
+580,Wollaston Lake,Saskatchewan,Prairie Provinces,Canada,true
+581,Brandon,Manitoba,Prairie Provinces,Canada,true
+582,Weyburn,Saskatchewan,Prairie Provinces,Canada,true
+583,Yarmouth,Nova Scotia,Atlantic Canada,Canada,true
+584,Wolfe Lake,New Brunswick,Atlantic Canada,Canada,true
+585,Mishkeegogamang Ojibway First Nation New Osnaburgh,Ontario,Central Canada,Canada,true
+586,Eckville,Alberta,Prairie Provinces,Canada,true
+587,Resolute Bay,Nunavut,Northern Canada,Canada,true
+588,Goderich,Ontario,Central Canada,Canada,true
+589,Kingcome Inlet,British Columbia,West Coast,Canada,true
+590,Duncan,British Columbia,West Coast,Canada,true
+591,unknown,unknown,"Quebec, New Brunswick, Nova Scotia, Prince Eward Island, and Newfoundland and Labrador",Canada,true
+592,Fort Albany,Ontario,Central Canada,Canada,true
+593,Mackenzie County,Alberta,Prairie Provinces,Canada,true
+594,unknown,unknown,Province of Quebec,Canada,true
+595,unknown,unknown,unknown,Japan,false
+596,Sheshatshiu,Newfoundland and Labrador,Atlantic Canada,Canada,true
+597,Vita,Manitoba,Prairie Provinces,Canada,true
+598,Sicamous,British Columbia,West Coast,Canada,true
+599,Peachland,British Columbia,West Coast,Canada,true
+600,Thunder Bay,Ontario,Central Canada,Canada,true
+601,unknown,unknown,Quebec City,Canada,true
+602,Lac-Mi??gantic,Quebec,Central Canada,Canada,true
+603,unknown,unknown,"Yukon, Northwest Territories and British Columbia",Canada,true
+604,Kasabonika Lake First Nation,Ontario,Central Canada,Canada,true
+605,Gainsford,Alberta,Prairie Provinces,Canada,true
+606,Northwest River,Newfoundland and Labrador,Atlantic Canada,Canada,true
+607,Island Lake,Manitoba,Prairie Provinces,Canada,true
+608,Sandy Lake First Nation,Ontario,Central Canada,Canada,true
+609,unknown,unknown,Southeast British Columbia,Canada,true
+610,Burlington,Ontario,Central Canada,Canada,true
+611,Quesnel Lake,British Columbia,West Coast,Canada,true
+612,Li??Isle-Verte,Quebec,Central Canada,Canada,true
+613,Saint-Jean-sur-Richelieu,Quebec,Central Canada,Canada,true
+614,Cumberland House,Saskatchewan,Prairie Provinces,Canada,true
+615,unknown,unknown,"Quebec, New Brunswick, Nova Scotia, and Prince Edward Island",Canada,true
+616,unknown,unknown,Fort Albany and Kashcewan First Nation,Canada,true
+617,unknown,unknown,unknown,Nepal,false
+618,Fredericton,New Brunswick,Atlantic Canada,Canada,true
+619,unknown,unknown,Lower Mainland British Columbia,Canada,true
+620,unknown,unknown,Alberta and Saskatchewan,Canada,true
+621,Long Lake,Alberta,Prairie Provinces,Canada,true
+622,Chestermere,Alberta,Prairie Provinces,Canada,true
+623,unknown,unknown,Nova Scotia and Prince Edward Island,Canada,true
+624,Christmas Island,Nova Scotia,Atlantic Canada,Canada,true
+625,North Saskatchewan River,Saskatchewan,Prairie Provinces,Canada,true
+626,unknown,unknown,"Ontario, Quebec, New Brunswick, Nove Scotia, Prince Edward Island and Newfoundland",Canada,true
+627,Pikangikum First Nation,Ontario,Central Canada,Canada,true
+628,Horton,Ontario,Central Canada,Canada,true
+629,Kashechewan First Nation,Ontario,Central Canada,Canada,true
+630,unknown,unknown,"Nova Scotia, Prince Edward Island and Newfoundland",Canada,true
+631,Easterville,Manitoba,Prairie Provinces,Canada,true
+632,Long Plain First Nation,Manitoba,Prairie Provinces,Canada,true
+633,West Kelowna,British Columbia,West Coast,Canada,true
+634,Burns Bog,British Columbia,West Coast,Canada,true
+635,unknown,unknown,South Coast and Lower Mainland British Columbia,Canada,true
+636,Seaforth Channel,British Columbia,West Coast,Canada,true
+637,unknown,unknown,Northeastern British Columbia,Canada,true
+638,unknown,unknown,"Alberta, Saskatchewan, Manitoba and Ontario",Canada,true
+639,Paul First Nation,Alberta,Prairie Provinces,Canada,true

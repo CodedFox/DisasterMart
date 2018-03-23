@@ -9,6 +9,7 @@ drop table costs;
 CREATE TABLE DATE (
 	DateKey int primary key,
 	Day int,
+	Week int,
 	Month int,
 	Year int,
 	Weekend boolean,
