@@ -29,7 +29,7 @@ create table DISASTER (
 
 Create table SUMMARY(
 	DescriptionKey int primary key,
-	Summary varchar(300),
+	Summary text,
 	Keyword1 varchar(100),
 	Keyword2 varchar(100),
 	Keyword3 varchar(100)
