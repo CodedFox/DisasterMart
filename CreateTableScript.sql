@@ -23,7 +23,7 @@ create table DISASTER (
 	DisasterSubgroup varchar(50),
 	DisasterGroup varchar(50),
 	DisasterCategory varchar(50),
-	Magnitude int,
+	Magnitude numeric,
 	UtilityPeopleAffected int
 );
 
@@ -46,15 +46,15 @@ Create table LOCATION(
 
 Create table COSTS(
 	CostsKey int primary key,
-	EstimatedTotalCost bigint,
+	EstimatedTotalCost numeric,
 	NormalizedTotalCost numeric,
-	FederalDFAAPayments bigint,
-	ProvincialDFAAPayments bigint,
-	ProvincialDepartmentPayments bigint,
-	MunicipalCosts bigint,
-	OGDCosts bigint,
-	InsurancePayments bigint,
-	NGOPayments bigint
+	FederalDFAAPayments numeric,
+	ProvincialDFAAPayments numeric,
+	ProvincialDepartmentPayments numeric,
+	MunicipalCosts numeric,
+	OGDCosts numeric,
+	InsurancePayments numeric,
+	NGOPayments numeric
 );
 
 Create table FACT(
