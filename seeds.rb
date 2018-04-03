@@ -12,6 +12,8 @@ def parse_data
     summaries = {}
     costs = {}
     facts = []
+    keywords = ['hurricane', 'drought', 'flood', 'fire', 'snow', 'explosion', 'avalanche', 'storm', 'derail', 'pollution', 
+                'spill', 'ice', 'water', 'wind', 'tornado', 'earthquake', 'virus', 'crash', 'temperature', 'lightning']
 
     # read csv
     csv = CSV.foreach('/Users/jonathangratton/OneDrive/University of Ottawa/Winter 2018/CSI 4142 - Introduction to Data Science/DisasterMart/CanadianDisasterDatabase.csv',:headers => true , :encoding => 'ISO-8859-1') do |row|
@@ -246,10 +248,21 @@ def parse_data
         end
 
         # create summary
-        descriptionKey = summaries[row[6]]
+        description = row[6]
+        key = [nil, nil, nil]
+        keyCounter = 0
+
+        keywords.each do |k|
+            if keyCounter < 2 && description.include?(k)
+                key[keyCounter] = k
+                keyCounter = keyCounter + 1
+            end
+        end
+
+        descriptionKey = summaries[{summary:description, keyword1:key[0], keyword2:key[1], keyword3:key[2]}]
         if descriptionKey.nil?
             descriptionKey = summaries.size + 1
-            summaries[row[6]] = descriptionKey
+            summaries[{summary:description, keyword1:key[0], keyword2:key[1], keyword3:key[2]}] = descriptionKey
         end
 
         # create cost object
@@ -281,7 +294,6 @@ def parse_data
     end
 
     return {disasters: disasters, locations: locations, dates: dates, summaries: summaries, costs: costs, facts: facts}
-    return costs
 end
 
 # extension to class Date to calculate canadian and international seasons
@@ -351,7 +363,7 @@ end
 # summary values
 CSV.open("summaries.csv", "w") do |csv|
     data[:summaries].each do |s|
-        csv << [s[1], s[0]]
+        csv << [s[1], s[0][:summary], s[0][:keyword1], s[0][:keyword2], s[0][:keyword3]]
     end
 end
 
