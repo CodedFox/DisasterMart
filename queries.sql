@@ -1,3 +1,10 @@
+-- 1 TOTAL COST PER EVENT TYPE, THEN ROLLED UP TO ALL EVENTS (UNFORTUNATELY NOT ROLLED DOWN TO SINGLE EVENTS BECAUSE FACT TABLE DOESN'T HAVE ID COLUMN- TOO TEDIOUS OTHERWISE)
+SELECT disastertype, GROUPING(disastertype), SUM(estimatedtotalcost) AS estimatedtotalcost
+FROM fact
+JOIN costs ON fact.costkey = costs.costskey
+JOIN disaster ON fact.disasterkey = disaster.disasterkey
+GROUP BY ROLLUP(disastertype)
+ORDER BY grouping, estimatedtotalcost;
 -- 1 TOTAL COST
 SELECT SUM(estimatedtotalcost) AS estimatedtotalcost
 FROM fact
@@ -13,6 +20,13 @@ SELECT estimatedtotalcost
 FROM fact 
 JOIN costs ON fact.costkey = costs.costskey;
 
+-- 2 NUMBER OF EVENTS OR NUMBER OF EVENT TYPE AT CITY, THEN ROLLED UP TO PROVINCE, THEN ROLLED UP TO COUNTRY (NOT COMPLETELY SURE IF YOU GUYS WANT THIS)
+SELECT country, province, city, disastertype, COUNT(*)
+FROM fact
+JOIN disaster ON fact.disasterkey = disaster.disasterkey
+JOIN location ON fact.locationkey = location.locationkey
+GROUP BY GROUPING SETS((country, disastertype), (country, province, disastertype), ROLLUP(country, province, city, disastertype))
+ORDER BY country, province, city, disastertype;
 -- 2 NUMBER OF EVENT TYPE AT COUNTRY
 SELECT disastertype, country, COUNT(*)
 FROM fact
@@ -47,6 +61,13 @@ FROM fact
 JOIN location ON fact.locationkey = location.locationkey
 GROUP BY city;
 
+-- 3 NUMBER OF EVACUATEE, FATALITIES, INJURED IN YEAR OR YEAR AND MONTH AT CITY, THEN ROLLED UP TO PROVINCE, THEN ROLLED UP TO COUNTRY (DIDN'T INCLUDE TOTAL EVACUTED, TOTAL FATALITIES, AND INJURED)
+SELECT country, province, city, year, month, SUM(evacuated) AS evacuated, sum(fatalities) AS fatalities, sum(injured) AS injured
+FROM fact
+JOIN date ON fact.enddatekey = date.datekey
+JOIN location ON fact.locationkey = location.locationkey
+GROUP BY GROUPING SETS((country, province, city, year), (country, province, year), (country, year), (country, province, city, year, month), (country, province, year, month), (country, year, month))
+ORDER BY country, province, city, year, month;
 -- 3 NUMBER OF EVACUATEE, FATALITIES, INJURED IN YEAR AT COUNTRY
 SELECT SUM(evacuated) AS evacuated, sum(fatalities) AS fatalities, sum(injured) AS injured, year, country
 FROM fact
