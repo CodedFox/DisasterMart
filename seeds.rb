@@ -13,7 +13,8 @@ def parse_data
     costs = {}
     facts = []
     keywords = ['hurricane', 'drought', 'flood', 'fire', 'snow', 'explosion', 'avalanche', 'storm', 'derail', 'pollution', 
-                'spill', 'ice', 'water', 'wind', 'tornado', 'earthquake', 'virus', 'crash', 'temperature', 'lightning']
+                'spill', 'ice', 'water', 'wind', 'tornado', 'earthquake', 'virus', 'crash', 'temperature', 'lightning',
+                'rain', 'killed', 'hail', 'evacuate', 'landslide', 'car', 'damage', 'injured', 'train', 'plane']
 
     # read csv
     csv = CSV.foreach('/Users/jonathangratton/OneDrive/University of Ottawa/Winter 2018/CSI 4142 - Introduction to Data Science/DisasterMart/CanadianDisasterDatabase.csv',:headers => true , :encoding => 'ISO-8859-1') do |row|
@@ -253,7 +254,7 @@ def parse_data
         keyCounter = 0
 
         keywords.each do |k|
-            if keyCounter < 2 && description.include?(k)
+            if keyCounter < 3 && description.include?(k)
                 key[keyCounter] = k
                 keyCounter = keyCounter + 1
             end
