@@ -1,0 +1,118 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     Query_Results
+Instances:    1089
+Attributes:   40
+              fatalities
+              injured
+              evacuated
+              city
+              province
+              region
+              country
+              canada
+              disastertype
+              disastersubgroup
+              disastergroup
+              disastercategory
+              magnitude
+              utilitypeopleaffected
+              start_day
+              start_week
+              start_month
+              start_year
+              start_weekend
+              start_seasoncanada
+              start_seasoninternational
+              end_day
+              end_week
+              end_month
+              end_year
+              end_weekend
+              end_seasoncanada
+              end_seasoninternational
+              estimatedtotalcost
+              normalizedtotalcost
+              federaldfaapayments
+              provincialdfaapayments
+              provincialdepartmentpayments
+              municipalcosts
+              ogdcosts
+              insurancepayments
+              ngopayments
+              keyword1
+              keyword2
+              keyword3
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+end_seasoncanada = spring
+|   start_week <= 12
+|   |   start_day <= 20: winter (6.0)
+|   |   start_day > 20: spring (8.0)
+|   start_week > 12: spring (281.0)
+end_seasoncanada = summer
+|   start_week <= 24
+|   |   start_month <= 3: winter (7.0)
+|   |   start_month > 3: spring (23.0)
+|   start_week > 24
+|   |   start_week <= 25
+|   |   |   start_day <= 20: spring (4.0)
+|   |   |   start_day > 20: summer (18.0)
+|   |   start_week > 25: summer (280.0)
+end_seasoncanada = winter
+|   start_month <= 3: winter (277.0)
+|   start_month > 3
+|   |   start_seasoninternational = fall: spring (1.0)
+|   |   start_seasoninternational = winter: summer (1.0)
+|   |   start_seasoninternational = summer
+|   |   |   start_day <= 20: fall (3.0)
+|   |   |   start_day > 20: winter (17.0)
+|   |   start_seasoninternational = spring: fall (2.0)
+end_seasoncanada = fall
+|   start_week <= 37
+|   |   start_month <= 6: spring (3.0)
+|   |   start_month > 6: summer (5.0)
+|   start_week > 37: fall (153.0/1.0)
+
+Number of Leaves  : 	17
+
+Size of the tree : 	29
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1076               98.8062 %
+Incorrectly Classified Instances        13                1.1938 %
+Kappa statistic                          0.9838
+Mean absolute error                      0.0064
+Root mean squared error                  0.0757
+Relative absolute error                  1.7348 %
+Root relative squared error             17.6657 %
+Total Number of Instances             1089     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.997    0.007    0.985      0.997    0.991      0.987    0.995     0.982     spring
+                 0.990    0.000    1.000      0.990    0.995      0.993    0.995     0.993     summer
+                 0.977    0.005    0.987      0.977    0.982      0.975    0.987     0.976     winter
+                 0.987    0.004    0.975      0.987    0.981      0.978    0.991     0.954     fall
+Weighted Avg.    0.988    0.004    0.988      0.988    0.988      0.984    0.992     0.979     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   <-- classified as
+ 319   0   1   0 |   a = spring
+   1 301   1   1 |   b = summer
+   4   0 301   3 |   c = winter
+   0   0   2 155 |   d = fall
+

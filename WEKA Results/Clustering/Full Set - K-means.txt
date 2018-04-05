@@ -1,0 +1,125 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 3 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     Query_Results
+Instances:    1089
+Attributes:   40
+              fatalities
+              injured
+              evacuated
+              city
+              province
+              region
+              country
+              canada
+              disastertype
+              disastersubgroup
+              disastergroup
+              disastercategory
+              magnitude
+              utilitypeopleaffected
+              start_day
+              start_week
+              start_month
+              start_year
+              start_weekend
+              start_seasoncanada
+              start_seasoninternational
+              end_day
+              end_week
+              end_month
+              end_year
+              end_weekend
+              end_seasoncanada
+              end_seasoninternational
+              estimatedtotalcost
+              normalizedtotalcost
+              federaldfaapayments
+              provincialdfaapayments
+              provincialdepartmentpayments
+              municipalcosts
+              ogdcosts
+              insurancepayments
+              ngopayments
+              keyword1
+              keyword2
+              keyword3
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 6
+Within cluster sum of squared errors: 7471.75987578771
+
+Initial starting points (random):
+
+Cluster 0: 0,0,500,Sydney,'Nova Scotia','Atlantic Canada',Canada,TRUE,Non-Residential,Explosion,Technology,Incident,0,0,25,21,5,1994,FALSE,spring,fall,25,21,5,1994,FALSE,spring,fall,48399522.802867,2870350.411828,0,0,17155716.445652,109124678.724138,203907844.214286,180249318.152778,1639849,fire,explosion,wind
+Cluster 1: 0,0,1150.980373,'Red Deer River',Alberta,'Prairie Provinces',Canada,TRUE,Flood,'Meteorological - Hydrological',Natural,Disaster,0,0,21,17,4,1948,FALSE,spring,fall,21,17,4,1948,FALSE,spring,fall,48399522.802867,2870350.411828,11943862.606186,1521749.987835,17155716.445652,109124678.724138,203907844.214286,180249318.152778,1639849,flood,evacuate,rain
+Cluster 2: 0,0,0,Montreal,Ontario,'Central and Northern Alberta',Canada,TRUE,Flood,'Meteorological - Hydrological',Natural,Disaster,0,0,1,9,3,1974,FALSE,winter,fall,30,26,6,1974,TRUE,summer,winter,8532000,1953893.1,4246073,4285927,17155716.445652,109124678.724138,203907844.214286,180249318.152778,1639849,flood,snow,damage
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                                                                                                                             Cluster#
+Attribute                                                                                                     Full Data                             0                             1                             2
+                                                                                                               (1089.0)                       (317.0)                       (322.0)                       (450.0)
+=================================================================================================================================================================================================================
+fatalities                                                                                                       63.527                      179.6466                       11.2163                       19.1584
+injured                                                                                                       2088.7875                     6529.2074                      257.1581                      271.3909
+evacuated                                                                                                     1150.9804                      325.2138                     1411.3529                      1546.376
+city                                                                                                           Montreal                      Montreal                      Montreal                      Montreal
+province                                                                                                        Ontario                       Ontario                       Ontario                       Ontario
+region                                                                                                   Central Canada                Central Canada                Central Canada                Central Canada
+country                                                                                                          Canada                        Canada                        Canada                        Canada
+canada                                                                                                             TRUE                          TRUE                          TRUE                          TRUE
+disastertype                                                                                                      Flood                  Winter Storm                         Flood                         Flood
+disastersubgroup                                                                          Meteorological - Hydrological Meteorological - Hydrological Meteorological - Hydrological Meteorological - Hydrological
+disastergroup                                                                                                   Natural                       Natural                       Natural                       Natural
+disastercategory                                                                                               Disaster                      Disaster                      Disaster                      Disaster
+magnitude                                                                                                        0.0753                        0.0694                        0.0776                        0.0778
+utilitypeopleaffected                                                                                       183111.4692                    45102.6625                   136606.7578                   313607.7111
+start_day                                                                                                       13.4601                        8.6625                       15.6957                         15.24
+start_week                                                                                                      24.9265                       20.4259                        17.764                       33.2222
+start_month                                                                                                      5.5712                        3.1167                           4.5                        8.0667
+start_year                                                                                                    1982.7172                     1972.5678                     1986.1957                     1987.3778
+start_weekend                                                                                                     FALSE                         FALSE                         FALSE                         FALSE
+start_seasoncanada                                                                                               spring                        winter                        spring                        summer
+start_seasoninternational                                                                                        winter                        summer                          fall                        winter
+end_day                                                                                                         14.1791                        9.2208                       16.1366                       16.2711
+end_week                                                                                                        25.6107                        20.347                       18.9037                       34.1178
+end_month                                                                                                        5.7374                        3.1924                        4.7516                        8.2356
+end_year                                                                                                       1982.753                     1972.6782                     1986.1957                     1987.3867
+end_weekend                                                                                                       FALSE                         FALSE                         FALSE                         FALSE
+end_seasoncanada                                                                                                 summer                        winter                        spring                        summer
+end_seasoninternational                                                                                          winter                        summer                          fall                        winter
+estimatedtotalcost                                                                                        48399522.8029                  55870164.147                 48591336.3323                 42999617.7749
+normalizedtotalcost                                                                                        2870350.4118                  3468136.6794                  2735837.3832                  2545494.7416
+federaldfaapayments                                                                                       11943862.6062                  9875371.5337                 13452958.5117                 12321157.6915
+provincialdfaapayments                                                                                     1521749.9878                  1234143.7495                  1616477.0986                  1656570.0942
+provincialdepartmentpayments                                                                              17155716.4457                 16624014.2542                  16981517.293                  17654920.272
+municipalcosts                                                                                           109124678.7241                113778417.9875                106602940.8436                107650821.5042
+ogdcosts                                                                                                 203907844.2143                205963153.8152                203747546.1029                202574694.9884
+insurancepayments                                                                                        180249318.1528                182526479.3329                186786966.3294                173967134.1373
+ngopayments                                                                                                     1639849                  1660409.8423                  1629727.3882                  1632607.6044
+keyword1                                                                                                          flood                         flood                         flood                         flood
+keyword2                                                                                                          storm                         storm                         storm                         storm
+keyword3                                                                                                           rain                          rain                          rain                          rain
+
+
+
+
+Time taken to build model (full training data) : 0.01 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       317 ( 29%)
+1       322 ( 30%)
+2       450 ( 41%)
+

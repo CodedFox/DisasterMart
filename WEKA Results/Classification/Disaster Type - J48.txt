@@ -1,0 +1,562 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     Query_Results
+Instances:    1089
+Attributes:   40
+              fatalities
+              injured
+              evacuated
+              city
+              province
+              region
+              country
+              canada
+              disastertype
+              disastersubgroup
+              disastergroup
+              disastercategory
+              magnitude
+              utilitypeopleaffected
+              start_day
+              start_week
+              start_month
+              start_year
+              start_weekend
+              start_seasoncanada
+              start_seasoninternational
+              end_day
+              end_week
+              end_month
+              end_year
+              end_weekend
+              end_seasoncanada
+              end_seasoninternational
+              estimatedtotalcost
+              normalizedtotalcost
+              federaldfaapayments
+              provincialdfaapayments
+              provincialdepartmentpayments
+              municipalcosts
+              ogdcosts
+              insurancepayments
+              ngopayments
+              keyword1
+              keyword2
+              keyword3
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+disastercategory = Incident
+|   disastersubgroup = Infrastructure failure: Manufacturing / Industry (14.0/7.0)
+|   disastersubgroup = Meteorological - Hydrological: Non-Residential (0.0)
+|   disastersubgroup = Transportation accident: Air (51.0/28.0)
+|   disastersubgroup = Hazardous Chemicals
+|   |   keyword1 = crash: Vehicle Release (1.03/0.03)
+|   |   keyword1 = car: Marine Release (1.03/0.03)
+|   |   keyword1 = storm: Leak / Spill Release (3.08/1.0)
+|   |   keyword1 = drought: Leak / Spill Release (0.0)
+|   |   keyword1 = flood: Leak / Spill Release (0.0)
+|   |   keyword1 = fire
+|   |   |   fatalities <= 0: Fire (14.23/1.23)
+|   |   |   fatalities > 0: Derailment Release (2.23/1.23)
+|   |   keyword1 = snow: Vehicle Release (1.03/0.03)
+|   |   keyword1 = injured: Leak / Spill Release (0.0)
+|   |   keyword1 = killed: Leak / Spill Release (0.0)
+|   |   keyword1 = explosion
+|   |   |   injured <= 2: Derailment Release (4.17/1.17)
+|   |   |   injured > 2: Marine Release (2.0/1.0)
+|   |   keyword1 = ice: Leak / Spill Release (3.08/2.0)
+|   |   keyword1 = damage: Leak / Spill Release (0.0)
+|   |   keyword1 = derail: Derailment Release (12.34/0.34)
+|   |   keyword1 = rain: Leak / Spill Release (1.03)
+|   |   keyword1 = landslide: Leak / Spill Release (0.0)
+|   |   keyword1 = tornado: Leak / Spill Release (0.0)
+|   |   keyword1 = evacuate
+|   |   |   start_weekend = TRUE: Fire (3.0)
+|   |   |   start_weekend = FALSE: Leak / Spill Release (6.25/1.0)
+|   |   keyword1 = pollution: Marine Release (3.08/1.08)
+|   |   keyword1 = spill
+|   |   |   start_year <= 1991: Marine Release (4.28/1.28)
+|   |   |   start_year > 1991: Leak / Spill Release (6.0)
+|   |   keyword1 = water: Leak / Spill Release (4.11/1.0)
+|   |   keyword1 = wind: Leak / Spill Release (1.03)
+|   |   keyword1 = earthquake: Leak / Spill Release (0.0)
+|   |   keyword1 = avalanche: Leak / Spill Release (0.0)
+|   |   keyword1 = hurricane: Leak / Spill Release (0.0)
+|   |   keyword1 = virus: Leak / Spill Release (0.0)
+|   |   keyword1 = temperature: Leak / Spill Release (0.0)
+|   |   keyword1 = hail: Leak / Spill Release (0.0)
+|   disastersubgroup = Fire: Residential (35.0/12.0)
+|   disastersubgroup = Explosion: Non-Residential (30.0/2.0)
+|   disastersubgroup = Geological: Non-Residential (0.0)
+|   disastersubgroup = Biological: Non-Residential (0.0)
+|   disastersubgroup = Arson
+|   |   injured <= 25: Non-Residential (4.0)
+|   |   injured > 25: Residential (3.0)
+|   disastersubgroup = Civil Incident
+|   |   evacuated <= 100: Rioting (4.0)
+|   |   evacuated > 100: Disturbance / Demonstrations (2.0)
+|   disastersubgroup = Terrorist: Bomb Attacks (12.0/4.0)
+|   disastersubgroup = Hijacking: Air (1.0)
+|   disastersubgroup = Space Event: Space Debris (1.0)
+disastercategory = Disaster
+|   disastersubgroup = Infrastructure failure: Flood (0.0)
+|   disastersubgroup = Meteorological - Hydrological
+|   |   keyword1 = crash: Winter Storm (2.27/0.26)
+|   |   keyword1 = car: Storms and Severe Thunderstorms (1.13/0.09)
+|   |   keyword1 = storm
+|   |   |   end_month <= 4
+|   |   |   |   region = Atlantic Canada
+|   |   |   |   |   keyword3 = wind: Winter Storm (3.67/1.17)
+|   |   |   |   |   keyword3 = ice: Winter Storm (0.0)
+|   |   |   |   |   keyword3 = car: Winter Storm (0.0)
+|   |   |   |   |   keyword3 = temperature: Winter Storm (0.0)
+|   |   |   |   |   keyword3 = injured: Winter Storm (0.0)
+|   |   |   |   |   keyword3 = damage: Storm Surge (1.22/0.22)
+|   |   |   |   |   keyword3 = train: Winter Storm (0.0)
+|   |   |   |   |   keyword3 = rain: Storms and Severe Thunderstorms (2.45/0.37)
+|   |   |   |   |   keyword3 = landslide: Winter Storm (0.0)
+|   |   |   |   |   keyword3 = evacuate: Winter Storm (0.0)
+|   |   |   |   |   keyword3 = hail: Winter Storm (0.0)
+|   |   |   |   |   keyword3 = water: Winter Storm (0.0)
+|   |   |   |   |   keyword3 = plane: Winter Storm (0.0)
+|   |   |   |   |   keyword3 = killed: Winter Storm (0.0)
+|   |   |   |   |   keyword3 = spill: Winter Storm (0.0)
+|   |   |   |   |   keyword3 = tornado: Winter Storm (0.0)
+|   |   |   |   |   keyword3 = storm: Winter Storm (0.0)
+|   |   |   |   |   keyword3 = avalanche: Winter Storm (0.0)
+|   |   |   |   |   keyword3 = derail: Winter Storm (0.0)
+|   |   |   |   |   keyword3 = lightning: Winter Storm (0.0)
+|   |   |   |   |   keyword3 = crash: Winter Storm (0.0)
+|   |   |   |   |   keyword3 = snow: Winter Storm (0.0)
+|   |   |   |   region = Northern Saskatchewan: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = West Coast: Flood (0.35/0.12)
+|   |   |   |   region = Central Canada: Flood (7.28/3.81)
+|   |   |   |   region = Lakes Huron, Erie and Ontario: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Newfoundland coast: Storms and Severe Thunderstorms (1.0)
+|   |   |   |   region = Prairie Provinces
+|   |   |   |   |   start_month <= 2: Flood (4.16/1.58)
+|   |   |   |   |   start_month > 2: Winter Storm (2.35/0.35)
+|   |   |   |   region = St. Lawrence counties of Quebec: Drought (0.12)
+|   |   |   |   region = Southern Alberta: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Eastern Canada: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Northeastern New Brunswick: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Northwestern British Columbia: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Across Canada: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = British Columbia, off coast: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Southwestern Ontario: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Southeastern Saskatchewan: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Saskatchewan and Alberta: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Northern British Columbia: Flood (0.12)
+|   |   |   |   region = Central and Southern Alberta: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Northern Canada: Flood (0.12)
+|   |   |   |   region = Ontario and Manitoba: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Yukon to Ontario: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Northern Manitoba: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Southwestern British Columbia: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = British Columbia to Ontario: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Western Alberta: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Southern Ontario: Storms and Severe Thunderstorms (2.0/1.0)
+|   |   |   |   region = Joe Rich and Southern British Columbia: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Southern Alberta and Saskatchewan: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Southern New Brunswick: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Maritime Provinces: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Central Ontario: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Southern Manitoba: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Prairies Provinces and Ontario: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Prince Edward Island and New Brunswick: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Quebec and Ontario: Winter Storm (0.12)
+|   |   |   |   region = Alberta to Maritimes: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Southwestern Manitoba: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Avalon area of Newfoundland and Labrador: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = North Central Saskatchewan: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Southeastern British Columbia: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Sahtu Region of the Northwest Territories: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Southwest Alberta: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Southern British Columbia: Storm - Unspecified / Other (1.0)
+|   |   |   |   region = South-Central Saskatchewan: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Ontario and Quebec: Drought (0.12)
+|   |   |   |   region = Northwest Ontario: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Ontario, Quebec and New Brunswick: Drought (0.12)
+|   |   |   |   region = 45 miles southwest of the islands of Saint-Pierre-et-Miquelon: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Quebec and New Brunswick: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Eastern Ontario and Quebec: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Northern Ontario: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Across Toronto, Canada, and internationally: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Eastern and Northern Coastline of New Brunswick: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Northeast and Central British Columbia: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Southern coast of Newfoundland: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Northern Alberta and Conklin: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Western Canada: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = West Coast of Newfoundland: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Southeastern British Columbia and Southwestern Alberta: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Vancouver Island and Southwestern British Columbia: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = South Central Manitoba: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = East Indian Ocean: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Northeastern Saskatchewan: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = South-Central Manitoba: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Across Canada, largely in the Greater Toronto area: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Maritime provinces: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Nova Scotia and New Brunswick: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = New Brunswick and Nova Scotia: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Martime Provinces: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Across Canada, concentrated in Saskatchewan and Alberta: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Southern Saskatchewan: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Kicking Horse Pass, Alberta - British Columbia border: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = North-central Alberta: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Southcentral Quebec: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = St. Lawrence River: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = New Brunswick and Eastern Quebec: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Manitoba to Atlantic Canada: Cold Event (0.12)
+|   |   |   |   region = Great Lakes: Lake Ontario: Storms and Severe Thunderstorms (1.0)
+|   |   |   |   region = Newfoundland, off coast: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Central Alberta: Flood (0.12)
+|   |   |   |   region = Manitoba and Saskatchewan: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = South Central Saskatchewan: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Southern and Central Ontario: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Southeastern New Brunswick: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = British Columbia, Pacific coast: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = West coast British Columbia: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Southern Prairies: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Southwestern and Southern Ontario: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Western Prairies: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Southwestern Quebec: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Newfoundland, Prince Edward Island and Nova Scotia: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Central and Northern Alberta: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Central and Southern Manitoba: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = New Brunswick and Quebec: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Southern Quebec: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Southwest British Columbia: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = off the Northern coast of Newfoundland: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Off the coast of Newfoundland: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Central, southern, and western Newfoundland: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Northeast Saskatchewan: Flood (0.12)
+|   |   |   |   region = South, Central and Western Manitoba: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Eastern Ontario and Western Quebec: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = West Coast of British Columbia: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = North Atlantic near west coast of Ireland: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Eastern Ontario and Southwestern Quebec: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = East Central British Columbia: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Quebec, New Brunswick, Nova Scotia, Prince Eward Island, and Newfoundland and Labrador: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Province of Quebec: Geomagnetic Storm (1.0)
+|   |   |   |   region = Quebec City: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Yukon, Northwest Territories and British Columbia: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Southeast British Columbia: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Quebec, New Brunswick, Nova Scotia, and Prince Edward Island: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Fort Albany and Kashcewan First Nation: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Lower Mainland British Columbia: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Alberta and Saskatchewan: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Nova Scotia and Prince Edward Island: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Ontario, Quebec, New Brunswick, Nove Scotia, Prince Edward Island and Newfoundland: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Nova Scotia, Prince Edward Island and Newfoundland: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = South Coast and Lower Mainland British Columbia: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Northeastern British Columbia: Storms and Severe Thunderstorms (0.0)
+|   |   |   |   region = Alberta, Saskatchewan, Manitoba and Ontario: Storms and Severe Thunderstorms (0.0)
+|   |   |   end_month > 4: Storms and Severe Thunderstorms (63.28/29.61)
+|   |   keyword1 = drought: Drought (45.34/7.0)
+|   |   keyword1 = flood: Flood (352.56/95.7)
+|   |   keyword1 = fire
+|   |   |   utilitypeopleaffected <= 33000
+|   |   |   |   evacuated <= 4
+|   |   |   |   |   estimatedtotalcost <= 2000000: Wildfire (7.23/4.94)
+|   |   |   |   |   estimatedtotalcost > 2000000: Storms and Severe Thunderstorms (10.06/5.7)
+|   |   |   |   evacuated > 4: Wildfire (86.14/0.79)
+|   |   |   utilitypeopleaffected > 33000: Winter Storm (3.14/1.14)
+|   |   keyword1 = snow: Winter Storm (60.08/20.78)
+|   |   keyword1 = injured: Tornado (4.53/0.48)
+|   |   keyword1 = killed: Heat Event (1.13/0.13)
+|   |   keyword1 = explosion: Storms and Severe Thunderstorms (1.13/0.09)
+|   |   keyword1 = ice: Flood (11.34/5.89)
+|   |   keyword1 = damage
+|   |   |   start_seasoninternational = fall: Storms and Severe Thunderstorms (0.18/0.13)
+|   |   |   start_seasoninternational = winter: Tornado (3.35/0.32)
+|   |   |   start_seasoninternational = summer
+|   |   |   |   start_week <= 3: Flood (2.11/1.05)
+|   |   |   |   start_week > 3: Cold Event (2.18/1.16)
+|   |   |   start_seasoninternational = spring: Storms and Severe Thunderstorms (0.11/0.08)
+|   |   keyword1 = derail: Flood (1.13/0.09)
+|   |   keyword1 = rain
+|   |   |   end_seasoncanada = spring: Flood (3.37/0.23)
+|   |   |   end_seasoncanada = summer: Flood (9.78/4.53)
+|   |   |   end_seasoncanada = winter: Winter Storm (3.76/0.69)
+|   |   |   end_seasoncanada = fall: Flood (1.23/0.23)
+|   |   keyword1 = landslide: Flood (1.13/0.09)
+|   |   keyword1 = tornado: Tornado (11.34/1.21)
+|   |   keyword1 = evacuate
+|   |   |   start_seasoncanada = spring: Flood (3.18/0.11)
+|   |   |   start_seasoncanada = summer: Wildfire (2.33/0.31)
+|   |   |   start_seasoncanada = winter: Flood (2.31/1.17)
+|   |   |   start_seasoncanada = fall: Storm - Unspecified / Other (0.11/0.08)
+|   |   keyword1 = pollution: Heat Event (1.13/0.13)
+|   |   keyword1 = spill: Flood (0.0)
+|   |   keyword1 = water
+|   |   |   end_month <= 6: Flood (5.53/0.31)
+|   |   |   end_month > 6: Storms and Severe Thunderstorms (2.4/1.23)
+|   |   keyword1 = wind
+|   |   |   end_seasoninternational = fall: Storms and Severe Thunderstorms (2.51/1.36)
+|   |   |   end_seasoninternational = winter
+|   |   |   |   region = Atlantic Canada: Flood (0.03)
+|   |   |   |   region = Northern Saskatchewan: Wildfire (0.03)
+|   |   |   |   region = West Coast: Storms and Severe Thunderstorms (0.06/0.03)
+|   |   |   |   region = Central Canada: Tornado (7.27/2.24)
+|   |   |   |   region = Lakes Huron, Erie and Ontario: Tornado (0.0)
+|   |   |   |   region = Newfoundland coast: Tornado (0.0)
+|   |   |   |   region = Prairie Provinces: Storms and Severe Thunderstorms (3.39/1.12)
+|   |   |   |   region = St. Lawrence counties of Quebec: Tornado (0.0)
+|   |   |   |   region = Southern Alberta: Storms and Severe Thunderstorms (0.06)
+|   |   |   |   region = Eastern Canada: Tornado (0.0)
+|   |   |   |   region = Northeastern New Brunswick: Flood (0.03)
+|   |   |   |   region = Northwestern British Columbia: Tornado (0.0)
+|   |   |   |   region = Across Canada: Tornado (0.0)
+|   |   |   |   region = British Columbia, off coast: Tornado (0.0)
+|   |   |   |   region = Southwestern Ontario: Tornado (0.0)
+|   |   |   |   region = Southeastern Saskatchewan: Tornado (0.0)
+|   |   |   |   region = Saskatchewan and Alberta: Tornado (0.0)
+|   |   |   |   region = Northern British Columbia: Tornado (0.0)
+|   |   |   |   region = Central and Southern Alberta: Flood (0.03)
+|   |   |   |   region = Northern Canada: Wildfire (0.03)
+|   |   |   |   region = Ontario and Manitoba: Tornado (0.0)
+|   |   |   |   region = Yukon to Ontario: Tornado (0.0)
+|   |   |   |   region = Northern Manitoba: Tornado (0.0)
+|   |   |   |   region = Southwestern British Columbia: Tornado (0.0)
+|   |   |   |   region = British Columbia to Ontario: Tornado (0.0)
+|   |   |   |   region = Western Alberta: Tornado (0.0)
+|   |   |   |   region = Southern Ontario: Tornado (1.03/0.03)
+|   |   |   |   region = Joe Rich and Southern British Columbia: Tornado (0.0)
+|   |   |   |   region = Southern Alberta and Saskatchewan: Tornado (0.0)
+|   |   |   |   region = Southern New Brunswick: Hurricane / Typhoon / Tropical Storm (1.0)
+|   |   |   |   region = Maritime Provinces: Tornado (0.0)
+|   |   |   |   region = Central Ontario: Tornado (0.0)
+|   |   |   |   region = Southern Manitoba: Storms and Severe Thunderstorms (0.06)
+|   |   |   |   region = Prairies Provinces and Ontario: Tornado (0.0)
+|   |   |   |   region = Prince Edward Island and New Brunswick: Tornado (0.0)
+|   |   |   |   region = Quebec and Ontario: Tornado (0.0)
+|   |   |   |   region = Alberta to Maritimes: Tornado (0.0)
+|   |   |   |   region = Southwestern Manitoba: Tornado (0.0)
+|   |   |   |   region = Avalon area of Newfoundland and Labrador: Tornado (0.0)
+|   |   |   |   region = North Central Saskatchewan: Tornado (0.0)
+|   |   |   |   region = Southeastern British Columbia: Tornado (0.0)
+|   |   |   |   region = Sahtu Region of the Northwest Territories: Tornado (0.0)
+|   |   |   |   region = Southwest Alberta: Tornado (0.0)
+|   |   |   |   region = Southern British Columbia: Tornado (0.0)
+|   |   |   |   region = South-Central Saskatchewan: Tornado (0.0)
+|   |   |   |   region = Ontario and Quebec: Tornado (0.0)
+|   |   |   |   region = Northwest Ontario: Tornado (0.0)
+|   |   |   |   region = Ontario, Quebec and New Brunswick: Tornado (0.0)
+|   |   |   |   region = 45 miles southwest of the islands of Saint-Pierre-et-Miquelon: Tornado (0.0)
+|   |   |   |   region = Quebec and New Brunswick: Tornado (0.0)
+|   |   |   |   region = Eastern Ontario and Quebec: Tornado (0.0)
+|   |   |   |   region = Northern Ontario: Tornado (0.0)
+|   |   |   |   region = Across Toronto, Canada, and internationally: Tornado (0.0)
+|   |   |   |   region = Eastern and Northern Coastline of New Brunswick: Tornado (0.0)
+|   |   |   |   region = Northeast and Central British Columbia: Tornado (0.0)
+|   |   |   |   region = Southern coast of Newfoundland: Tornado (0.0)
+|   |   |   |   region = Northern Alberta and Conklin: Tornado (0.0)
+|   |   |   |   region = Western Canada: Tornado (0.0)
+|   |   |   |   region = West Coast of Newfoundland: Tornado (0.0)
+|   |   |   |   region = Southeastern British Columbia and Southwestern Alberta: Tornado (0.0)
+|   |   |   |   region = Vancouver Island and Southwestern British Columbia: Tornado (0.0)
+|   |   |   |   region = South Central Manitoba: Tornado (0.0)
+|   |   |   |   region = East Indian Ocean: Tornado (0.0)
+|   |   |   |   region = Northeastern Saskatchewan: Tornado (0.0)
+|   |   |   |   region = South-Central Manitoba: Tornado (0.0)
+|   |   |   |   region = Across Canada, largely in the Greater Toronto area: Tornado (0.0)
+|   |   |   |   region = Maritime provinces: Tornado (0.0)
+|   |   |   |   region = Nova Scotia and New Brunswick: Tornado (0.0)
+|   |   |   |   region = New Brunswick and Nova Scotia: Tornado (0.0)
+|   |   |   |   region = Martime Provinces: Tornado (0.0)
+|   |   |   |   region = Across Canada, concentrated in Saskatchewan and Alberta: Tornado (0.0)
+|   |   |   |   region = Southern Saskatchewan: Tornado (0.0)
+|   |   |   |   region = Kicking Horse Pass, Alberta - British Columbia border: Tornado (0.0)
+|   |   |   |   region = North-central Alberta: Tornado (0.0)
+|   |   |   |   region = Southcentral Quebec: Tornado (0.0)
+|   |   |   |   region = St. Lawrence River: Tornado (0.0)
+|   |   |   |   region = New Brunswick and Eastern Quebec: Tornado (0.0)
+|   |   |   |   region = Manitoba to Atlantic Canada: Tornado (0.0)
+|   |   |   |   region = Great Lakes: Lake Ontario: Tornado (0.0)
+|   |   |   |   region = Newfoundland, off coast: Tornado (0.0)
+|   |   |   |   region = Central Alberta: Tornado (0.0)
+|   |   |   |   region = Manitoba and Saskatchewan: Tornado (0.0)
+|   |   |   |   region = South Central Saskatchewan: Tornado (0.0)
+|   |   |   |   region = Southern and Central Ontario: Tornado (0.0)
+|   |   |   |   region = Southeastern New Brunswick: Tornado (0.0)
+|   |   |   |   region = British Columbia, Pacific coast: Tornado (0.0)
+|   |   |   |   region = West coast British Columbia: Tornado (0.0)
+|   |   |   |   region = Southern Prairies: Tornado (0.0)
+|   |   |   |   region = Southwestern and Southern Ontario: Tornado (0.0)
+|   |   |   |   region = Western Prairies: Tornado (0.0)
+|   |   |   |   region = Southwestern Quebec: Tornado (0.0)
+|   |   |   |   region = Newfoundland, Prince Edward Island and Nova Scotia: Tornado (0.0)
+|   |   |   |   region = Central and Northern Alberta: Tornado (0.0)
+|   |   |   |   region = Central and Southern Manitoba: Tornado (0.0)
+|   |   |   |   region = New Brunswick and Quebec: Tornado (0.0)
+|   |   |   |   region = Southern Quebec: Tornado (0.0)
+|   |   |   |   region = Southwest British Columbia: Tornado (0.0)
+|   |   |   |   region = off the Northern coast of Newfoundland: Tornado (0.0)
+|   |   |   |   region = Off the coast of Newfoundland: Tornado (0.0)
+|   |   |   |   region = Central, southern, and western Newfoundland: Tornado (0.0)
+|   |   |   |   region = Northeast Saskatchewan: Tornado (0.0)
+|   |   |   |   region = South, Central and Western Manitoba: Tornado (0.0)
+|   |   |   |   region = Eastern Ontario and Western Quebec: Tornado (0.0)
+|   |   |   |   region = West Coast of British Columbia: Tornado (0.0)
+|   |   |   |   region = North Atlantic near west coast of Ireland: Tornado (0.0)
+|   |   |   |   region = Eastern Ontario and Southwestern Quebec: Tornado (0.0)
+|   |   |   |   region = East Central British Columbia: Flood (0.03)
+|   |   |   |   region = Quebec, New Brunswick, Nova Scotia, Prince Eward Island, and Newfoundland and Labrador: Tornado (0.0)
+|   |   |   |   region = Province of Quebec: Tornado (0.0)
+|   |   |   |   region = Quebec City: Tornado (0.0)
+|   |   |   |   region = Yukon, Northwest Territories and British Columbia: Tornado (0.0)
+|   |   |   |   region = Southeast British Columbia: Tornado (0.0)
+|   |   |   |   region = Quebec, New Brunswick, Nova Scotia, and Prince Edward Island: Tornado (0.0)
+|   |   |   |   region = Fort Albany and Kashcewan First Nation: Tornado (0.0)
+|   |   |   |   region = Lower Mainland British Columbia: Tornado (0.0)
+|   |   |   |   region = Alberta and Saskatchewan: Tornado (0.0)
+|   |   |   |   region = Nova Scotia and Prince Edward Island: Tornado (0.0)
+|   |   |   |   region = Ontario, Quebec, New Brunswick, Nove Scotia, Prince Edward Island and Newfoundland: Tornado (0.0)
+|   |   |   |   region = Nova Scotia, Prince Edward Island and Newfoundland: Tornado (0.0)
+|   |   |   |   region = South Coast and Lower Mainland British Columbia: Tornado (0.0)
+|   |   |   |   region = Northeastern British Columbia: Tornado (0.0)
+|   |   |   |   region = Alberta, Saskatchewan, Manitoba and Ontario: Tornado (0.0)
+|   |   |   end_seasoninternational = summer: Winter Storm (4.87/2.84)
+|   |   |   end_seasoninternational = spring: Hurricane / Typhoon / Tropical Storm (3.36/0.33)
+|   |   keyword1 = earthquake: Flood (0.0)
+|   |   keyword1 = avalanche: Avalanche (10.2/1.2)
+|   |   keyword1 = hurricane: Hurricane / Typhoon / Tropical Storm (15.87/6.85)
+|   |   keyword1 = virus: Flood (0.0)
+|   |   keyword1 = temperature: Heat Event (1.13/0.13)
+|   |   keyword1 = hail: Storms and Severe Thunderstorms (3.4/0.28)
+|   disastersubgroup = Transportation accident: Flood (0.0)
+|   disastersubgroup = Hazardous Chemicals: Flood (0.0)
+|   disastersubgroup = Fire: Flood (0.0)
+|   disastersubgroup = Explosion: Flood (0.0)
+|   disastersubgroup = Geological
+|   |   magnitude <= 2
+|   |   |   canada = TRUE: Landslide (40.0)
+|   |   |   canada = FALSE: Tsunami (2.0/1.0)
+|   |   magnitude > 2: Earthquake (11.0/3.0)
+|   disastersubgroup = Biological
+|   |   evacuated <= 85: Epidemic (14.73/1.0)
+|   |   evacuated > 85: Infestation (2.27/0.27)
+|   disastersubgroup = Arson: Flood (0.0)
+|   disastersubgroup = Civil Incident: Flood (0.0)
+|   disastersubgroup = Terrorist: Flood (0.0)
+|   disastersubgroup = Hijacking: Flood (0.0)
+|   disastersubgroup = Space Event: Flood (0.0)
+
+Number of Leaves  : 	369
+
+Size of the tree : 	397
+
+
+Time taken to build model: 0.15 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         736               67.5849 %
+Incorrectly Classified Instances       353               32.4151 %
+Kappa statistic                          0.6195
+Mean absolute error                      0.021 
+Root mean squared error                  0.1069
+Relative absolute error                 49.6306 %
+Root relative squared error             73.6942 %
+Total Number of Instances             1089     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.857    0.006    0.462      0.857    0.600      0.626    0.924     0.349     Manufacturing / Industry
+                 0.867    0.005    0.944      0.867    0.904      0.896    0.988     0.935     Wildfire
+                 0.792    0.022    0.452      0.792    0.576      0.587    0.987     0.500     Air
+                 0.000    0.002    0.000      0.000    0.000      -0.003   0.978     0.132     Marine
+                 0.286    0.059    0.387      0.286    0.329      0.259    0.802     0.319     Storms and Severe Thunderstorms
+                 0.804    0.003    0.925      0.804    0.860      0.857    0.976     0.859     Drought
+                 0.955    0.203    0.651      0.955    0.774      0.688    0.917     0.737     Flood
+                 0.941    0.003    0.842      0.941    0.889      0.888    0.969     0.853     Fire
+                 0.744    0.004    0.889      0.744    0.810      0.806    0.994     0.842     Non-Residential
+                 0.507    0.021    0.632      0.507    0.563      0.539    0.860     0.486     Winter Storm
+                 0.432    0.008    0.704      0.432    0.535      0.537    0.872     0.487     Tornado
+                 0.000    0.001    0.000      0.000    0.000      -0.002   0.889     0.030     Heat Event
+                 1.000    0.002    0.952      1.000    0.976      0.975    1.000     0.990     Landslide
+                 0.000    0.000    ?          0.000    ?          ?        0.871     0.208     Transportation
+                 0.929    0.011    0.684      0.929    0.788      0.791    0.990     0.629     Residential
+                 0.250    0.002    0.667      0.250    0.364      0.403    0.957     0.437     Rail
+                 0.786    0.001    0.917      0.786    0.846      0.847    0.997     0.863     Avalanche
+                 0.929    0.003    0.813      0.929    0.867      0.867    0.963     0.761     Epidemic
+                 0.667    0.005    0.706      0.667    0.686      0.681    0.856     0.689     Derailment Release
+                 0.625    0.003    0.625      0.625    0.625      0.622    0.871     0.387     Marine Release
+                 0.783    0.010    0.621      0.783    0.692      0.690    0.993     0.596     Leak / Spill Release
+                 0.000    0.000    ?          0.000    ?          ?        0.733     0.056     Storm - Unspecified / Other
+                 0.750    0.001    0.857      0.750    0.800      0.800    0.999     0.819     Earthquake
+                 0.000    0.002    0.000      0.000    0.000      -0.004   0.858     0.047     Cold Event
+                 0.171    0.006    0.500      0.171    0.255      0.280    0.769     0.209     Hurricane / Typhoon / Tropical Storm
+                 0.000    0.000    ?          0.000    ?          ?        0.634     0.038     Vehicle Release
+                 0.000    0.000    ?          0.000    ?          ?        0.999     0.583     Disturbance / Demonstrations
+                 1.000    0.004    0.667      1.000    0.800      0.815    0.997     0.586     Bomb Attacks
+                 0.000    0.001    0.000      0.000    0.000      -0.002   0.860     0.035     Vehicle
+                 0.000    0.001    0.000      0.000    0.000      -0.001   0.496     0.001     Communications
+                 0.000    0.001    0.000      0.000    0.000      -0.001   0.997     0.333     Infestation
+                 0.000    0.002    0.000      0.000    0.000      -0.004   0.650     0.013     Storm Surge
+                 0.000    0.000    ?          0.000    ?          ?        0.495     0.001     Water
+                 0.000    0.000    ?          0.000    ?          ?        0.494     0.001     Energy
+                 0.500    0.002    0.500      0.500    0.500      0.498    0.872     0.326     Tsunami
+                 0.000    0.000    ?          0.000    ?          ?        0.494     0.001     Pandemic
+                 0.000    0.000    ?          0.000    ?          ?        0.498     0.001     Volcano
+                 1.000    0.002    0.667      1.000    0.800      0.816    1.000     0.917     Rioting
+                 0.000    0.000    ?          0.000    ?          ?        0.992     0.167     Kidnapping / Murder
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.001     Space Debris
+                 0.000    0.000    ?          0.000    ?          ?        0.743     0.051     Shootings
+                 0.000    0.000    ?          0.000    ?          ?        0.469     0.001     Geomagnetic Storm
+Weighted Avg.    0.676    0.068    ?          0.676    ?          ?        0.906     0.612     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   k   l   m   n   o   p   q   r   s   t   u   v   w   x   y   z  aa  ab  ac  ad  ae  af  ag  ah  ai  aj  ak  al  am  an  ao  ap   <-- classified as
+   6   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0 |   a = Manufacturing / Industry
+   0  85   0   0   4   1   8   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |   b = Wildfire
+   0   0  19   1   0   0   0   0   1   0   0   0   0   0   0   2   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0 |   c = Air
+   0   0   7   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |   d = Marine
+   0   0   0   0  36   0  76   0   0   6   4   0   0   0   0   0   0   0   0   0   0   0   0   0   3   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0 |   e = Storms and Severe Thunderstorms
+   0   0   0   0   0  37   8   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |   f = Drought
+   0   2   0   0   8   1 295   0   0   2   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |   g = Flood
+   0   0   0   0   0   0   0  16   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |   h = Fire
+   0   0   0   0   0   0   0   0  32   0   0   0   0   0  11   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |   i = Non-Residential
+   0   1   0   0  11   0  18   0   0  36   0   0   0   0   0   0   1   0   0   0   0   0   0   1   2   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0 |   j = Winter Storm
+   0   1   0   0  11   0  11   0   0   1  19   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |   k = Tornado
+   0   0   0   0   0   1   5   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |   l = Heat Event
+   0   0   0   0   0   0   0   0   0   0   0   0  40   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |   m = Landslide
+   4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |   n = Transportation
+   0   0   0   0   0   0   0   0   2   0   0   0   0   0  26   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |   o = Residential
+   0   0  12   0   0   0   0   0   0   0   0   0   0   0   0   4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |   p = Rail
+   0   0   0   0   0   0   0   0   0   3   0   0   0   0   0   0  11   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |   q = Avalanche
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0  13   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0 |   r = Epidemic
+   0   0   0   0   0   0   0   2   0   0   0   0   0   0   0   0   0   0  12   0   4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |   s = Derailment Release
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   5   2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |   t = Marine Release
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   4   1  18   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |   u = Leak / Spill Release
+   0   1   0   0  10   0   9   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |   v = Storm - Unspecified / Other
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   6   0   0   0   0   0   0   0   0   0   0   0   2   0   0   0   0   0   0   0 |   w = Earthquake
+   0   0   0   0   0   0   3   0   0   6   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |   x = Cold Event
+   0   0   0   0  10   0  14   0   0   1   4   0   0   0   0   0   0   0   0   0   0   0   0   0   6   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |   y = Hurricane / Typhoon / Tropical Storm
+   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   2   4   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |   z = Vehicle Release
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   2   0   0   0   0 |  aa = Disturbance / Demonstrations
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   8   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |  ab = Bomb Attacks
+   0   0   4   1   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |  ac = Vehicle
+   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |  ad = Communications
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |  ae = Infestation
+   0   0   0   0   2   0   6   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |  af = Storm Surge
+   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |  ag = Water
+   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |  ah = Energy
+   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   2   0   0   0   0   0   0   0 |  ai = Tsunami
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |  aj = Pandemic
+   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |  ak = Volcano
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   4   0   0   0   0 |  al = Rioting
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   2   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |  am = Kidnapping / Murder
+   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |  an = Space Debris
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   2   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |  ao = Shootings
+   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |  ap = Geomagnetic Storm
+

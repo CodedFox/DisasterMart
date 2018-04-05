@@ -1,0 +1,1002 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.EM -I 100 -N -1 -X 10 -max -1 -ll-cv 1.0E-6 -ll-iter 1.0E-6 -M 1.0E-6 -K 10 -num-slots 1 -S 100
+Relation:     Query_Results
+Instances:    1089
+Attributes:   40
+              fatalities
+              injured
+              evacuated
+              city
+              province
+              region
+              country
+              canada
+              disastertype
+              disastersubgroup
+              disastergroup
+              disastercategory
+              magnitude
+              utilitypeopleaffected
+              start_day
+              start_week
+              start_month
+              start_year
+              start_weekend
+              start_seasoncanada
+              start_seasoninternational
+              end_day
+              end_week
+              end_month
+              end_year
+              end_weekend
+              end_seasoncanada
+              end_seasoninternational
+              estimatedtotalcost
+              normalizedtotalcost
+              federaldfaapayments
+              provincialdfaapayments
+              provincialdepartmentpayments
+              municipalcosts
+              ogdcosts
+              insurancepayments
+              ngopayments
+              keyword1
+              keyword2
+              keyword3
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+EM
+==
+
+Number of clusters selected by cross validation: 3
+Number of iterations performed: 3
+
+
+                                                                                                  Cluster
+Attribute                                                                                               0              1              2
+                                                                                                   (0.22)         (0.13)         (0.65)
+========================================================================================================================================
+fatalities
+  mean                                                                                              6.2996       406.2317        15.3916
+  std. dev.                                                                                        17.0043      4215.6412        39.5016
+
+injured
+  mean                                                                                            207.7225     14589.6364       262.1096
+  std. dev.                                                                                       619.9027     168549.664       683.9278
+
+evacuated
+  mean                                                                                           3687.2472        353.152       438.3309
+  std. dev.                                                                                     18601.4427      1853.8569      1137.5908
+
+city
+  Moose River                                                                                       1.7375              1         1.2625
+  Northeast of Vancouver                                                                                 1              1              3
+  Lake Huron                                                                                        1.9955         1.0024         3.0021
+  Lake St. Clair                                                                                    1.9975              1         1.0025
+  Canning                                                                                           1.1579              1         1.8421
+  Lasalle                                                                                           1.9805         1.0014         2.0181
+  Waswanipi reserve                                                                                      1              1              2
+  Grand Falls                                                                                       2.4566              1         1.5434
+  Regina                                                                                                 1              1              9
+  Upper Gagetown                                                                                    1.8413              1         1.1587
+  Ottawa                                                                                            2.5756         1.6057         5.8187
+  Grand Forks                                                                                            1              3              1
+  Wellington                                                                                             1         2.8769         1.1231
+  Cranberry                                                                                              1              2              1
+  Saint John River Basin                                                                            9.4377         1.0235         2.5388
+  Fernie                                                                                                 1              2              3
+  Frank                                                                                             1.1219              1         1.8781
+  Carbonado                                                                                              1         1.8227         1.1773
+  Edmonton                                                                                          3.0001         1.8612        11.1387
+  Calgary                                                                                           3.0309         2.6704        12.2987
+  Upper Arrow Lake                                                                                  1.0004         1.0917         1.9079
+  Toronto                                                                                           2.6024              2        14.3977
+  Red River                                                                                         2.9941              1         1.0059
+  Spences Bridge                                                                                         1              1              2
+  Vancouver Island                                                                                   1.932              2          2.068
+  Quebec City                                                                                       3.2149              1         4.7851
+  Notre-Dame-de-la-Salette                                                                          1.8841              1         1.1159
+  Chester                                                                                                1         1.9996         1.0003
+  Burnaby                                                                                                1              1              2
+  Spanish River                                                                                          1         1.9865         1.0135
+  Rogers Pass                                                                                       1.8823         1.0042         2.1135
+  St-Alphonse-de-Bagotville                                                                         1.9987              1         1.0013
+  Coucoucache                                                                                       1.9938              1         1.0062
+  Cochrane                                                                                               1            1.7            3.3
+  St. Lawrence River                                                                                     1         2.0002         1.9998
+  Hillcrest                                                                                              1              1              2
+  North Saskatchewan River                                                                               1         1.0058         2.9942
+  Nanaimo                                                                                           1.9972         1.6334         1.3694
+  Cooper Mine                                                                                       1.9636              1         1.0364
+  Winnipeg                                                                                          9.9053         1.9637          8.131
+  New Waterford                                                                                          1              1              2
+  Halifax                                                                                           1.2478         3.3834         5.3688
+  Pictou County                                                                                          1         2.9977         1.0023
+  Trenton                                                                                                1              1              2
+  Icelandic River                                                                                   1.0002              1         1.9998
+  Saint John River                                                                                  3.8916              1         1.1084
+  Montreal                                                                                          64.879        63.3708       229.7502
+  Emerson                                                                                                1              1              2
+  Goulais River                                                                                          1         1.0003         1.9997
+  Whitedog Lake                                                                                          1              1              2
+  Come by Chance                                                                                    1.9983              1         1.0017
+  Duck Mountain                                                                                     1.9992              1         1.0008
+  Saint-Romuald                                                                                     1.8457              1         1.1543
+  Linton                                                                                            1.6505              1         1.3495
+  Sarnia                                                                                            2.7905         1.0001         5.2095
+  Lethbridge                                                                                        1.0001          2.545         5.4549
+  Louiseville                                                                                            1              1              3
+  Norman Wells                                                                                           1              1              3
+  Courtland                                                                                              1              1              2
+  Lesser Slave Lake region                                                                               1              1              2
+  Saguenay region                                                                                        1              2              1
+  Aylmer                                                                                                 1              1              2
+  Saint-Basile-le-Grand                                                                                  2              1              1
+  Dundas                                                                                                 1          1.001          1.999
+  Albany                                                                                                 1         1.0006         1.9994
+  Niagara Falls                                                                                          1          1.001          1.999
+  Dryden                                                                                            1.9444              1         2.0556
+  Montmartre                                                                                             1              1              2
+  Liard River                                                                                        1.992              1          1.008
+  Radisson                                                                                               1              1              2
+  Saint-Jacques                                                                                          1              1              2
+  Sudbury                                                                                                1              1              4
+  Gulf of St. Lawrence                                                                                   1              1              2
+  Saint-Li??onard d'Aston                                                                                1              1              2
+  Ungava Peninsula                                                                                       1              2              1
+  Old Crow                                                                                          1.9597              1         2.0403
+  Harrow                                                                                                 1              1              3
+  Banff                                                                                             1.0019         1.1773         1.8208
+  Hagersville                                                                                       1.0005         1.0001         1.9994
+  Vancouver Harbour                                                                                 1.0021         1.0002         1.9977
+  La Baie                                                                                           1.9909              1         1.0091
+  Sainte-Anne des Plaines                                                                           1.9708              1         1.0292
+  St.-Amable                                                                                        1.5895              1         1.4105
+  Woodstock                                                                                              1              1              3
+  Northumberland Strait                                                                                  2              1              1
+  Oka                                                                                                    1              1              2
+  Madeleine Islands                                                                                      1              2              1
+  Bugaboo Glacier Provincial Park                                                                   1.9837              1         1.0163
+  Notre-Dame de Pierreville                                                                         1.9989              1         1.0011
+  Chaudii??re River                                                                                 2.9964              1         1.0036
+  Niverville                                                                                         1.915              1          1.085
+  Betsiamites                                                                                            1              1              2
+  Red Deer                                                                                               1              1              2
+  St. Lazare                                                                                             1              1              2
+  Off Cape Beale                                                                                         1              1              2
+  Kinsella                                                                                               1              1              2
+  Maskinongi??                                                                                           1              1              2
+  Jarvis                                                                                                 1              1              2
+  Near the North Pole                                                                                    1              1              2
+  Canso                                                                                                  1              1              2
+  Vernon                                                                                                 1              1              2
+  Grand Coulee                                                                                           1              1              2
+  Haines                                                                                                 1              1              2
+  Salmon Arm                                                                                             1              1              3
+  Southern                                                                                          2.1656         2.6133         3.2211
+  Corunna                                                                                           1.0012         1.0503         1.9485
+  Montri??al                                                                                        1.0001         1.0001         2.9997
+  Elmira                                                                                                 1              1              2
+  Port au Choix                                                                                     1.0024         1.0195         1.9781
+  Peace River                                                                                       2.9939         1.9589         2.0472
+  Sainte-Brigitte-de-Laval                                                                          1.9997              1         1.0003
+  Port-aux-Basques                                                                                   1.996              1          1.004
+  Hay River                                                                                         2.9769         1.0001          2.023
+  Plymouth                                                                                          1.0736              1         1.9264
+  Attawapiskat                                                                                      2.0841              1         1.9159
+  Longlac                                                                                           1.4816              1         1.5184
+  Oakville                                                                                               1              1              2
+  Yukon Rivers                                                                                           1              1              2
+  Yellowknife                                                                                            1              1              2
+  Avalon                                                                                                 1              1              2
+  St. John's                                                                                        1.9292         1.5695         8.5013
+  Upper Saint John River Valley                                                                          2              1              1
+  Shubenacadie                                                                                      1.9842              1         1.0158
+  Swan River                                                                                             1              1              2
+  Truro                                                                                             1.0516         1.0225         2.9259
+  Windsor                                                                                           3.0401         1.0094         5.9505
+  Kirkland Lake                                                                                     1.5682              1         2.4318
+  Plaster Rock                                                                                      2.9999              1         1.0001
+  Sydney                                                                                            1.0452              1         2.9548
+  South Dumfries                                                                                         1              2              1
+  Poplar Bay                                                                                             1         1.0001         1.9999
+  Hervey Junction                                                                                   1.0007         1.4046         1.5947
+  Blanc Sablon                                                                                      1.9998              1         1.0002
+  Western                                                                                           2.0007         1.0095         1.9898
+  Burin Peninsula                                                                                        1              2              3
+  Hamilton                                                                                               1         1.9899         5.0101
+  Sunny Valley                                                                                      1.0001         1.9095         1.0905
+  Grande Prairie                                                                                         1              2              5
+  Flat Bay                                                                                          1.0114         1.0009         1.9877
+  Grey County                                                                                            1              1              2
+  Timmins                                                                                           2.2838              1         4.7162
+  Atikokan                                                                                               1              1              2
+  Lesser Slave Lake area                                                                                 1              1              3
+  Nechako River                                                                                          1              1              2
+  Bay of Fundy                                                                                           1         1.9999         1.0001
+  Durham                                                                                            1.0016          1.236         1.7624
+  Assiniboine                                                                                            3              1              1
+  Swan Hills                                                                                        1.4083              1         1.5917
+  Northwest of Matagami                                                                                  1              1              2
+  Iroquois Falls                                                                                         1              1              2
+  Hummingbird Creek                                                                                      1              1              2
+  Les i??boulements                                                                                      1              1              2
+  Wood Buffalo National Park                                                                             1         1.9568         1.0432
+  Kangiqsualujjuaq                                                                                       1              2              1
+  Portage la Prairie                                                                                     1              1              3
+  Tibbet Lake                                                                                            1              1              2
+  Greater Vancouver Area                                                                                 1              1              3
+  Peggy's Cove                                                                                           1              1              2
+  Barrie                                                                                            2.0047          1.012         1.9833
+  Taylor                                                                                            1.0002         1.1111         1.8887
+  Terrace                                                                                           1.0029         1.3694         3.6278
+  East of Lake Winnipeg                                                                             1.7487              1         1.2513
+  Melita                                                                                             1.955              1          1.045
+  Thamesville                                                                                       1.9014              1         1.0986
+  La Ronge                                                                                          1.9114              1         1.0886
+  Beardmore                                                                                         1.6829              1         1.3171
+  Burwash Landing                                                                                        1              1              2
+  Kenora                                                                                                 1              1              3
+  Badger                                                                                            1.0387         1.0113           3.95
+  Clearwater                                                                                             1              1              2
+  Drummondville                                                                                          1              1              2
+  Balmoral                                                                                               1              1              2
+  Vancouver                                                                                         1.0228         2.0146         7.9625
+  Little Saskatchewan First Nation Reserve                                                               1              1              2
+  Glacier National Park                                                                                  1              1              2
+  St-Hilaire                                                                                         1.918              1          2.082
+  Passmore                                                                                          1.9637              1         1.0363
+  Pine Lake                                                                                              1              1              2
+  Chetwynd                                                                                               1              1              2
+  Walkerton                                                                                              1              1              2
+  Vanguard                                                                                               1              1              2
+  Peace River area                                                                                       2              1              1
+  Morley                                                                                                 1              1              2
+  New York City                                                                                          1              1              2
+  Brookdale                                                                                         1.2931              1         1.7069
+  Notre-Dame-du-Lac                                                                                 1.3265              1         2.6735
+  Montreal Lake                                                                                          1              2              1
+  Attawapiskat First Nation                                                                         1.9319              1         1.0681
+  Municipalities of Ignace                                                                               1              1              2
+  Southeast                                                                                              1              2              2
+  Kingsville                                                                                             1              1              2
+  Peerless Lake                                                                                          1              1              2
+  Turnor Lake                                                                                            1              1              2
+  Hawes/Patuanak                                                                                         1              1              2
+  Crutwell                                                                                               1              1              2
+  Nemiscau region                                                                                        1              1              2
+  Near community of Sheshatshui                                                                          1              1              2
+  Kee-Way-Win FN; Townships of Terrace Bay                                                               1              1              2
+  Brantford                                                                                              1         1.9605         2.0395
+  Tyendinaga Township First Nation                                                                       1         1.0001         1.9999
+  Oxford                                                                                                 2              1              1
+  Baie Verte Peninsula                                                                              1.9922              1         1.0078
+  Eastern Passage                                                                                   1.0031              1         1.9969
+  The Bois-Francs                                                                                        1              1              2
+  Ontario                                                                                                1              1              2
+  The Pas                                                                                                1              1              2
+  Estevan                                                                                                1              1              4
+  Edmundston                                                                                             1              1              2
+  Kings County                                                                                           1              1              2
+  North Vancouver                                                                                    1.001         1.0298         1.9692
+  Kashechewan                                                                                        3.991              1          2.009
+  Fort Good Hope                                                                                    1.8706              1         1.1294
+  Bridgewater                                                                                       1.8244              1         1.1756
+  Chisasibi                                                                                         1.3192              1         1.6808
+  Chibougamau                                                                                            1              1              2
+  Cumberland House Cree First Nation                                                                     1              1              2
+  Kelowna                                                                                                2              1              2
+  Stephenville                                                                                           1              1              2
+  Abbotsford                                                                                             1              1              2
+  Glovertown                                                                                             1              1              2
+  Delta                                                                                             1.0003         1.0428         1.9568
+  Red Earth                                                                                         1.9923              1         1.0077
+  Slocan River                                                                                      1.8805              1         1.1195
+  Mistissini                                                                                             1              1              2
+  Aklavik                                                                                           1.9162              1         2.0838
+  Tumbler Ridge                                                                                          1              1              2
+  Nordegg                                                                                                1              1              2
+  Cariboo-Chilcotin                                                                                      1              1              2
+  Galiano Island                                                                                         1              1              2
+  Boisbriand                                                                                             1              1              2
+  Amherstburg                                                                                            1              1              2
+  Sainte-Anne-des-Plaines                                                                                1              1              2
+  Saint-Joseph et Valli??e                                                                               1              1              2
+  Russell                                                                                                1              1              2
+  South Coast                                                                                            1              1              2
+  Peninsulas of Avalon                                                                                   1              1              2
+  Maple Ridge                                                                                       1.9837              1         1.0163
+  Selkirk                                                                                           1.9993              1         1.0007
+  Red Earth First Nation                                                                                 2              1              2
+  Gatineau                                                                                          1.8782              1         1.1218
+  Fishing Lake                                                                                      2.8293              1         1.1707
+  Bellefleur                                                                                        1.8038              1         1.1962
+  Sept-i??les                                                                                       1.3032              1         1.6968
+  Happy Valley - Goose Bay                                                                               1              1              2
+  Dartmouth                                                                                              1              1              4
+  Elie                                                                                                   1              1              2
+  South Indian Lake                                                                                      1              1              2
+  Kootenay                                                                                               1              1              2
+  Natuashish                                                                                             1              1              2
+  Municipalities of Pipestone                                                                            1              1              2
+  Gaspi??                                                                                                1              1              3
+  Matane                                                                                                 1              1              2
+  Prince George                                                                                     1.9946              1         2.0054
+  Saint John                                                                                         2.004         1.9425         4.0534
+  Port Bruce                                                                                        1.0631         1.0001         1.9368
+  Belleville                                                                                        1.9989              1         1.0011
+  Paddockwood                                                                                       1.9974              1         1.0026
+  Trent Hills                                                                                        1.994              1          1.006
+  Albany River                                                                                      1.9898              1         1.0102
+  James Bay                                                                                         1.8629              1         1.1371
+  Newbrook                                                                                           1.161              1          1.839
+  Pukatawagan                                                                                            1              1              2
+  Norway House                                                                                      1.6126              1         1.3874
+  High River                                                                                        1.4575              1         1.5425
+  Huntingdon                                                                                        1.2844              1         1.7156
+  Pangnirtung                                                                                            1              1              2
+  Monti??ri??gie                                                                                         2              1              2
+  Lanaudii??re                                                                                           1              1              2
+  Deschambault Lake                                                                                      1              1              2
+  Daniels Harbour                                                                                   1.9903              1         1.0097
+  La Tuque                                                                                               1              1              2
+  Zama City                                                                                              1              1              2
+  Kingston                                                                                               1              1              2
+  White Rock                                                                                             1              1              2
+  East Kooteney Elk River-Watershed Region                                                          1.0002              1         1.9998
+  Queens County                                                                                          1              1              2
+  Colchester                                                                                             1              1              2
+  Gander                                                                                                 1              1              4
+  Greater Vancouver                                                                                 1.0001          1.425         2.5749
+  Khyex River                                                                                            1              1              2
+  Eyjafjallaji??kull glacier                                                                        1.9995              1         1.0005
+  Rock Creek                                                                                        1.9838              1         1.0162
+  Wemotaci reserve                                                                                  1.3828              1         1.6172
+  Bristol                                                                                           1.9976              1         1.0024
+  Tuktoyaktuk                                                                                            1              1              2
+  Lorette River                                                                                          1              1              2
+  Notre-Dame-des-Prairies                                                                                1              1              2
+  Yarmouth County                                                                                        1              1              3
+  Val-des-Bois                                                                                           1              2              1
+  Di??li??age                                                                                            1              1              2
+  Cranberry Portage                                                                                      1              1              2
+  Meat Cove                                                                                              1              1              2
+  Baie-Verte                                                                                             1              2              1
+  Lambton County                                                                                         1              1              2
+  Midland                                                                                                1              1              2
+  Leamington                                                                                             1              1              2
+  North Battleford                                                                                       1              1              2
+  Port-au-Prince                                                                                         1              2              1
+  Merville                                                                                               1         1.7802         1.2198
+  Winisk                                                                                            1.9877              1         1.0123
+  County of Thorhild                                                                                1.1953              1         1.8047
+  Britannia Beach                                                                                        1              1              2
+  Perth-Andover                                                                                     3.9842              1         1.0158
+  Comox                                                                                                  1           2.65           1.35
+  Dugald                                                                                                 1              1              2
+  Glengarry Hospital                                                                                1.8879              1         1.1121
+  Chapleau                                                                                          1.2741              1         1.7259
+  Saguenay River Valley                                                                                  2              1              1
+  Cross Lake                                                                                        1.9692              1         1.0308
+  Haileybury                                                                                             1              1              2
+  Roseau River First Nation                                                                              2              1              1
+  Echo Harbour                                                                                           1              1              2
+  Dawson                                                                                             2.977              1          1.023
+  Rideau                                                                                                 1         1.0058         1.9942
+  Pike Lake                                                                                         1.9961              1         1.0039
+  Coalmont                                                                                               1              2              1
+  Liverpool                                                                                              1         1.9998         1.0002
+  Capreol                                                                                                1              1              2
+  Crerar                                                                                                 1              1              2
+  Baffin Bay                                                                                             1              2              1
+  St-Gregoire-de-Montmercy                                                                               1              1              2
+  Rainy River                                                                                            1              1              2
+  Sydney Mines                                                                                           1              1              2
+  Gogama                                                                                             1.279              1          2.721
+  Charlottetown                                                                                          1              1              3
+  Almonte                                                                                                1              1              2
+  Aldershot                                                                                              1              1              2
+  Saint-Donat                                                                                            1              1              2
+  Windsor to Tecumseh                                                                                    1              1              2
+  Okanagan Valley                                                                                        1              1              2
+  Elgin                                                                                             1.2465         1.2389         1.5147
+  Red Deer River                                                                                    1.9879              1         1.0121
+  Mississagi                                                                                             1              1              2
+  Fraser River                                                                                           2              1              1
+  Off Queen Charlotte Islands                                                                            1              2              1
+  Saint-Joachim                                                                                          1              1              2
+  Rimouski                                                                                               1         1.0074         1.9926
+  Canoe River                                                                                            1              1              2
+  Bow River                                                                                              1         1.9935         1.0065
+  Sumas                                                                                                  1         1.9931         1.0069
+  Coniston                                                                                          1.0001         1.0431         1.9567
+  Stephenville Crossing                                                                                  1              1              2
+  Eastend                                                                                            1.999              1          1.001
+  Lake Superior                                                                                          1         1.9501         2.0499
+  White Point Beach                                                                                 1.0003         1.0207          1.979
+  Moose Jaw                                                                                         1.6891              1         1.3109
+  Lake Louise                                                                                            1              1              2
+  Nicolet                                                                                                1              1              2
+  Ocean Falls                                                                                            1          1.992         1.0079
+  Springhill                                                                                             1              1              3
+  Mounte Slesse                                                                                          1              1              2
+  St. Lawrence                                                                                           1         1.0001         1.9999
+  Murdochville                                                                                      1.9737              1         1.0263
+  Thetford Mines                                                                                    1.0002         1.8706         1.1292
+  Prince Rupert                                                                                          1              1              2
+  Amaranth                                                                                          1.0001         1.8421         1.1579
+  Lanark                                                                                                 1         1.9932         1.0068
+  Revelstoke                                                                                        1.9927              1         1.0073
+  The Battery                                                                                       1.0278         1.3581         1.6141
+  Granduc Mine                                                                                      1.0008         1.0288         1.9704
+  Chedabucto Bay                                                                                     1.001          1.453          1.546
+  Kootenay Region                                                                                        1              1              2
+  McBride                                                                                                1              1              2
+  Toulnustouc River                                                                                      1              1              2
+  Hay River Township                                                                                3.9747              1         1.0253
+  Sainte-Thi??ri??se-de-Blainville                                                                       1              1              2
+  Saint-Joachim-de-Tourelle                                                                              1              1              2
+  Ramsey Arm                                                                                             1              1              2
+  Port Alberni                                                                                           1              2              1
+  Hope                                                                                                   1         1.9985         1.0015
+  Toyko                                                                                             1.7989              1         1.2011
+  Baie-Comeau                                                                                            1              1              2
+  Crowsnest Pass                                                                                         1         1.0553         1.9447
+  Huron                                                                                             1.9701              1         1.0299
+  Camp Creek                                                                                             1              1              2
+  Lambeth                                                                                                1              1              2
+  Dunnville                                                                                              1         1.9957         1.0043
+  Porteau                                                                                           1.0006         1.0809         1.9185
+  Qu'Appelle River Basin                                                                            1.0002         1.9555         1.0442
+  Iroquois                                                                                           1.951              1          1.049
+  Saint-Jean                                                                                        1.9879              1         1.0121
+  Fraser Canyon                                                                                     1.5739              1         1.4261
+  Saint-Jean-Vianney                                                                                1.9053              1         1.0947
+  Maniwaki                                                                                          2.7352              1         1.2648
+  Kootenay region                                                                                        1              1              2
+  Victoriaville                                                                                          1              1              2
+  Richelieu River                                                                                   1.0442              1         1.9558
+  Corner Brook                                                                                      1.7108              1         2.2892
+  Smoky                                                                                                  1              1              2
+  Harbour Breton                                                                                         1              1              2
+  Cedoux                                                                                                 1              1              2
+  Cambridge/Waterloo Region                                                                          1.883              1          1.117
+  Rae Point                                                                                              1              1              2
+  Southwestern                                                                                           1              1              2
+  Devastation Glacier                                                                                    1              1              2
+  Saint Bonaventure                                                                                      1              1              2
+  i??les-de-la-Madeleine                                                                            1.0119         1.0011          2.987
+  Region of Quebec City                                                                                  1         1.9959          1.004
+  Pincher Creek                                                                                     1.0002         1.5401         1.4597
+  Squamish River                                                                                         1              1              2
+  Niagara Peninsula                                                                                 1.0051          1.146         1.8489
+  Assiniboine River                                                                                 1.9984              1         1.0016
+  Fundy Isles                                                                                       1.0111         1.0922         1.8968
+  Cranbrook                                                                                              1         1.0429          1.957
+  Moncton                                                                                                1              1              2
+  Petty Harbour                                                                                          1              1              2
+  Fort McMurray                                                                                          2         1.0004         2.9996
+  St-Eustache                                                                                       1.9966              1         1.0034
+  Eastman                                                                                                1              1              2
+  Milk River                                                                                             1              1              2
+  Millwoods                                                                                              1         1.9989         1.0011
+  Golden                                                                                             1.004         1.1022         2.8937
+  Glace Bay                                                                                         1.0009         1.0589         1.9402
+  North York                                                                                        1.3357              1         1.6643
+  Red River region                                                                                       2              1              1
+  Chapais region of Chibougamau                                                                          1         1.9639         1.0361
+  Drumheller                                                                                             1         1.9938         1.0062
+  Mississauga                                                                                            2              1              2
+  Belmoral Mine                                                                                     1.5251              1         1.4749
+  Webb                                                                                              1.0423              1         1.9577
+  Red Lake                                                                                               1              1              2
+  Gaspi??sie Region                                                                                      1              1              2
+  Sussex                                                                                                 1         1.9984         1.0016
+  Southeastern                                                                                           1              2              1
+  Westfield                                                                                              1              1              2
+  Squamish                                                                                               1              1              2
+  Medonte                                                                                                1         1.0007         1.9993
+  Labrador City                                                                                     1.0007         1.8532         1.1461
+  Lodgepole                                                                                         1.0003         1.3232         1.6765
+  Orillia                                                                                           1.0099         1.0001           1.99
+  Sherbrooke                                                                                        1.9996              1         1.0004
+  Dunsmuir                                                                                          1.0128              1         1.9872
+  Montreal Sainte-Rose                                                                                   1              1              2
+  Curling                                                                                                2              1              1
+  North shore of St. Lawrence River                                                                 1.9997              1         1.0003
+  Reeces Corners                                                                                    1.8072              1         1.1928
+  Cincinnati. Ohio                                                                                       1              1              2
+  upper Richelieu River                                                                             1.9799              1         1.0201
+  Cape Breton Island                                                                                     1              1              2
+  Gaspi??sie                                                                                             1              2              1
+  Avalon Peninsula                                                                                       1              1              2
+  Fort Frances                                                                                           1         1.0012         1.9988
+  Lower Fraser River Valley                                                                         1.0002         1.9905         1.0093
+  Chesley                                                                                           1.9998              1         1.0002
+  London                                                                                                 1              1              2
+  Smiths Falls                                                                                           1         1.9856         1.0144
+  Pemberton area                                                                                         1              1              2
+  Chatham                                                                                           1.9941              1         1.0059
+  Stoney Creek                                                                                      1.0006         1.0871         1.9123
+  Hinton                                                                                            1.0001          1.025         1.9749
+  Lake Erie                                                                                         1.9979              1         1.0021
+  Hopeville to Barrie                                                                                    1              1              2
+  Riviere Chaudii??re                                                                               1.9998              1         1.0002
+  Valrita-Harty                                                                                     1.5068              1         1.4932
+  400 km off Cape Race                                                                                   1              1              2
+  Blue River                                                                                        1.9972              1         1.0028
+  Slave Lake                                                                                             2              1              1
+  Hall Lake                                                                                              1              1              2
+  Wollaston Lake                                                                                         1              1              2
+  Brandon                                                                                           1.9947              1         1.0053
+  Weyburn                                                                                                1              1              2
+  Yarmouth                                                                                               1              1              2
+  Wolfe Lake                                                                                             1         1.8447         1.1553
+  Mishkeegogamang Ojibway First Nation New Osnaburgh                                                     1              1              2
+  Sicamous                                                                                               1              1              2
+  Eckville                                                                                               1              1              2
+  Resolute Bay                                                                                           1              1              2
+  Goderich                                                                                               1              1              2
+  Kingcome Inlet                                                                                         1              1              2
+  Duncan                                                                                                 1              1              2
+  Fort Albany                                                                                       1.9831              1         1.0169
+  Mackenzie County                                                                                       1              1              2
+  Sheshatshiu                                                                                            1              1              2
+  Vita                                                                                                   1              1              2
+  Peachland                                                                                              1              1              2
+  Thunder Bay                                                                                       1.7172              1         1.2828
+  Lac-Mi??gantic                                                                                         1              1              2
+  Kasabonika Lake First Nation                                                                      1.8667              1         1.1333
+  Gainsford                                                                                              1              1              2
+  Northwest River                                                                                        1              1              2
+  Island Lake                                                                                            1              1              2
+  Sandy Lake First Nation                                                                                1              1              2
+  Burlington                                                                                        1.0006         1.0001         1.9993
+  Quesnel Lake                                                                                           1              1              2
+  Li??Isle-Verte                                                                                    1.0001         1.0122         1.9877
+  Saint-Jean-sur-Richelieu                                                                               1              1              2
+  Cumberland House                                                                                  1.0826              1         1.9174
+  Fredericton                                                                                       1.0112              1         1.9888
+  Easterville                                                                                            1              1              2
+  Long Lake                                                                                              1              1              2
+  Chestermere                                                                                            1              1              2
+  Christmas Island                                                                                       1              1              2
+  Pikangikum First Nation                                                                           1.9526              1         1.0474
+  Horton                                                                                            1.9723              1         1.0277
+  Kashechewan First Nation                                                                          1.9115              1         1.0885
+  Long Plain First Nation                                                                                1              1              2
+  West Kelowna                                                                                           1              1              2
+  Burns Bog                                                                                              1              1              2
+  Seaforth Channel                                                                                       1              1              2
+  Paul First Nation                                                                                 1.2851              1         1.7149
+  [total]                                                                                         742.5363       639.7619      1206.7018
+province
+  Nova Scotia                                                                                        6.193         9.4984        44.3086
+  British Columbia                                                                                 17.1089         24.132         87.759
+  Ontario                                                                                          87.3939        65.5722        281.034
+  Quebec                                                                                            38.519         14.617         86.864
+  Prince Edward Island                                                                              3.0097          2.087         9.9033
+  Newfoundland and Labrador                                                                        10.9586         4.1187        43.9226
+  Saskatchewan                                                                                     13.4592         3.6965        32.8443
+  New Brunswick                                                                                    27.2111         7.9331        16.8558
+  Alberta                                                                                          11.6445        11.9665         64.389
+  Manitoba                                                                                         25.3849         4.8036        31.8115
+  Northwest Territories                                                                             8.7329          1.337        10.9301
+  Yukon                                                                                             4.9205              1         5.0795
+  Nunavut                                                                                                1              2              4
+  [total]                                                                                         255.5363       152.7619       719.7018
+region
+  Atlantic Canada                                                                                  44.3725        20.6372       111.9903
+  Northern Saskatchewan                                                                                  2              1              4
+  West Coast                                                                                       17.1089         24.132         87.759
+  Central Canada                                                                                   79.7251        32.9943       205.2805
+  Lakes Huron, Erie and Ontario                                                                          1              1              2
+  Newfoundland coast                                                                                     1              2              1
+  Prairie Provinces                                                                                50.6171        39.0356       142.3473
+  St. Lawrence counties of Quebec                                                                        1         1.0125         1.9875
+  Southern Alberta                                                                                  4.9533              1         8.0467
+  Eastern Canada                                                                                    1.9994         1.0301         2.9706
+  Northeastern New Brunswick                                                                             1              1              2
+  Northwestern British Columbia                                                                          1              1              5
+  Across Canada                                                                                          1         5.9999         3.0001
+  British Columbia, off coast                                                                            1              1              2
+  Southwestern Ontario                                                                              3.0016         1.2317         2.7667
+  Southeastern Saskatchewan                                                                         1.0001              1         2.9999
+  Saskatchewan and Alberta                                                                               1              1              3
+  Northern British Columbia                                                                              1         1.0005         1.9995
+  Central and Southern Alberta                                                                           1              1              2
+  Northern Canada                                                                                  12.6534          2.337        18.0096
+  Ontario and Manitoba                                                                                   1              1              2
+  Yukon to Ontario                                                                                  1.0072         2.0904         1.9023
+  Northern Manitoba                                                                                      2              1              1
+  Southwestern British Columbia                                                                          1              2              5
+  British Columbia to Ontario                                                                            1              1              2
+  Western Alberta                                                                                   1.0099              1         1.9901
+  Southern Ontario                                                                                  9.5515         5.0973        12.3512
+  Joe Rich and Southern British Columbia                                                            1.0002              1         1.9998
+  Southern Alberta and Saskatchewan                                                                      2              1              1
+  Southern New Brunswick                                                                            2.9541              1         2.0459
+  Maritime Provinces                                                                                1.0005         2.4755          8.524
+  Central Ontario                                                                                   2.8928          1.061         4.0461
+  Southern Manitoba                                                                                 2.9882         1.0119         7.9998
+  Prairies Provinces and Ontario                                                                         1         1.9992         1.0008
+  Prince Edward Island and New Brunswick                                                                 1         1.0003         1.9997
+  Quebec and Ontario                                                                                     1              1              3
+  Alberta to Maritimes                                                                              1.0003         1.8695         1.1302
+  Southwestern Manitoba                                                                                  1              1              2
+  Avalon area of Newfoundland and Labrador                                                               1              1              2
+  North Central Saskatchewan                                                                        1.6652              1         1.3348
+  Southeastern British Columbia                                                                     1.0006              1         1.9994
+  Sahtu Region of the Northwest Territories                                                              1              1              2
+  Southwest Alberta                                                                                  1.999         1.9946         1.0064
+  Southern British Columbia                                                                         3.0021         1.0129          1.985
+  South-Central Saskatchewan                                                                        1.9997              1         1.0003
+  Ontario and Quebec                                                                                     1         1.9978         3.0022
+  Northwest Ontario                                                                                 1.3108              1         1.6892
+  Ontario, Quebec and New Brunswick                                                                      1           2.02           2.98
+  45 miles southwest of the islands of Saint-Pierre-et-Miquelon                                     1.0001         1.7781         1.2218
+  Quebec and New Brunswick                                                                               1              1              2
+  Eastern Ontario and Quebec                                                                             2              1              1
+  Northern Ontario                                                                                       1              1              3
+  Across Toronto, Canada, and internationally                                                            1              1              2
+  Eastern and Northern Coastline of New Brunswick                                                        1              1              2
+  Northeast and Central British Columbia                                                                 1              1              2
+  Southern coast of Newfoundland                                                                         1              1              2
+  Northern Alberta and Conklin                                                                      1.0002              1         1.9998
+  Western Canada                                                                                         1         1.9369         2.0631
+  West Coast of Newfoundland                                                                        1.9996              1         1.0004
+  Southeastern British Columbia and Southwestern Alberta                                                 2              1              1
+  Vancouver Island and Southwestern British Columbia                                                     1              1              2
+  South Central Manitoba                                                                            1.9873              1         1.0127
+  East Indian Ocean                                                                                      1              1              2
+  Northeastern Saskatchewan                                                                         1.9989              1         1.0011
+  South-Central Manitoba                                                                            1.2271              1         1.7729
+  Across Canada, largely in the Greater Toronto area                                                     1              1              2
+  Maritime provinces                                                                                1.0005         1.3219         1.6776
+  Nova Scotia and New Brunswick                                                                          1              1              2
+  New Brunswick and Nova Scotia                                                                          1              1              3
+  Martime Provinces                                                                                      1              1              2
+  Across Canada, concentrated in Saskatchewan and Alberta                                                1              1              2
+  Southern Saskatchewan                                                                                  1         1.6961         2.3039
+  Kicking Horse Pass, Alberta - British Columbia border                                                  1          1.001          1.999
+  North-central Alberta                                                                                  1              1              2
+  Southcentral Quebec                                                                               1.9999              1         1.0001
+  St. Lawrence River                                                                                     1              1              2
+  New Brunswick and Eastern Quebec                                                                  1.9533              1         1.0467
+  Manitoba to Atlantic Canada                                                                            1              1              2
+  Great Lakes: Lake Ontario                                                                              1         1.9938         1.0062
+  Newfoundland, off coast                                                                                1              2              1
+  Central Alberta                                                                                        1         1.0004         2.9996
+  Manitoba and Saskatchewan                                                                              1         1.0008         1.9992
+  South Central Saskatchewan                                                                        1.0939              1         1.9061
+  Southern and Central Ontario                                                                      2.8417              1         1.1583
+  Southeastern New Brunswick                                                                        1.0799              1         1.9201
+  British Columbia, Pacific coast                                                                        1              1              2
+  West coast British Columbia                                                                            1              1              2
+  Southern Prairies                                                                                      1              1              2
+  Southwestern and Southern Ontario                                                                 1.0051         1.1003         1.8946
+  Western Prairies                                                                                       1              1              2
+  Southwestern Quebec                                                                               1.0034         1.0944         1.9022
+  Newfoundland, Prince Edward Island and Nova Scotia                                                     1              1              2
+  Central and Northern Alberta                                                                      1.0188              1         1.9812
+  Central and Southern Manitoba                                                                     1.9959              1         1.0041
+  New Brunswick and Quebec                                                                               1              1              2
+  Southern Quebec                                                                                   1.9495              1         2.0505
+  Southwest British Columbia                                                                             1              1              2
+  off the Northern coast of Newfoundland                                                                 1              1              2
+  Off the coast of Newfoundland                                                                          1         1.7857         1.2143
+  Central, southern, and western Newfoundland                                                            1              2              1
+  Northeast Saskatchewan                                                                                 1         1.0008         1.9992
+  South, Central and Western Manitoba                                                               1.9792              1         1.0208
+  Eastern Ontario and Western Quebec                                                                     1              1              2
+  West Coast of British Columbia                                                                         1              1              2
+  North Atlantic near west coast of Ireland                                                              1              1              2
+  Eastern Ontario and Southwestern Quebec                                                                1              1              2
+  East Central British Columbia                                                                          1              1              2
+  Quebec, New Brunswick, Nova Scotia, Prince Eward Island, and Newfoundland and Labrador                 1              1              2
+  Province of Quebec                                                                                     1              1              2
+  Quebec City                                                                                            1              1              2
+  Yukon, Northwest Territories and British Columbia                                                      1              1              2
+  Southeast British Columbia                                                                             1              1              2
+  Quebec, New Brunswick, Nova Scotia, and Prince Edward Island                                           1              1              2
+  Fort Albany and Kashcewan First Nation                                                            1.5747              1         1.4253
+  Lower Mainland British Columbia                                                                        1              1              2
+  Alberta and Saskatchewan                                                                               1              1              4
+  Nova Scotia and Prince Edward Island                                                                   1              1              2
+  Ontario, Quebec, New Brunswick, Nove Scotia, Prince Edward Island and Newfoundland                     1         1.0104         1.9896
+  Nova Scotia, Prince Edward Island and Newfoundland                                                     1              1              2
+  South Coast and Lower Mainland British Columbia                                                   1.4631              1         3.5369
+  Northeastern British Columbia                                                                     1.5508              1         1.4492
+  Alberta, Saskatchewan, Manitoba and Ontario                                                            1              1              2
+  [total]                                                                                         364.5363       261.7619       828.7018
+country
+  Canada                                                                                          241.7378       137.7562        705.506
+  Saudi Arabia                                                                                           1              1              2
+  Iceland                                                                                           1.9995              1         1.0005
+  Haiti                                                                                                  1              2              1
+  Japan                                                                                             1.7989              2         1.2011
+  Libya                                                                                                  1         1.0058         1.9942
+  Nepal                                                                                                  1              2              1
+  [total]                                                                                         249.5363       146.7619       713.7018
+canada
+  TRUE                                                                                            241.7377       136.9781       703.2842
+  FALSE                                                                                             2.7986         4.7839         5.4176
+  [total]                                                                                         244.5363       141.7619       708.7018
+disastertype
+  Manufacturing / Industry                                                                          1.7375         2.8769         5.3856
+  Wildfire                                                                                          16.976              3         81.024
+  Air                                                                                               4.6658          1.043        21.2913
+  Marine                                                                                                 1         4.0024         4.9976
+  Storms and Severe Thunderstorms                                                                  15.4162         9.8617       103.7221
+  Drought                                                                                           1.9994         26.955        20.0456
+  Flood                                                                                           142.5701        25.0691       144.3608
+  Fire                                                                                              4.6338         1.0902         14.276
+  Non-Residential                                                                                    3.096        14.2061        28.6979
+  Winter Storm                                                                                     13.8337        17.0874        43.0789
+  Tornado                                                                                           6.9298         2.8628        37.2074
+  Heat Event                                                                                             1         2.0149         5.9851
+  Landslide                                                                                        11.8865         4.1535          26.96
+  Transportation                                                                                         1         1.0001         4.9999
+  Residential                                                                                       3.2737         8.8363          18.89
+  Rail                                                                                              2.1808          2.055        14.7642
+  Avalanche                                                                                         4.8975         3.6115          8.491
+  Epidemic                                                                                          1.8879          4.957        10.1551
+  Derailment Release                                                                                4.9464         1.4055        14.6481
+  Marine Release                                                                                    4.8339         1.4532         4.7129
+  Leak / Spill Release                                                                              4.6403           1.77        19.5897
+  Storm - Unspecified / Other                                                                       3.8289         2.9632        17.2079
+  Earthquake                                                                                             1              9              1
+  Cold Event                                                                                        1.0075         4.9914         6.0011
+  Hurricane / Typhoon / Tropical Storm                                                                   3              1             34
+  Vehicle Release                                                                                   3.9815         1.9856         4.0329
+  Disturbance / Demonstrations                                                                           1         1.0058         2.9942
+  Bomb Attacks                                                                                      1.0128              1         8.9872
+  Vehicle                                                                                           1.0423              1         6.9577
+  Communications                                                                                         1              1              2
+  Infestation                                                                                            1              1              3
+  Storm Surge                                                                                       1.0421         3.1674         7.7905
+  Water                                                                                                  1              1              2
+  Energy                                                                                                 1              1              2
+  Tsunami                                                                                                1              4              2
+  Pandemic                                                                                               1              2              1
+  Volcano                                                                                           1.9995              1         1.0005
+  Rioting                                                                                           1.9737              1         4.0263
+  Kidnapping / Murder                                                                                    1              1              3
+  Space Debris                                                                                      1.0025         1.3368         1.6607
+  Shootings                                                                                         1.2406              1         2.7594
+  Geomagnetic Storm                                                                                      1              1              2
+  [total]                                                                                         284.5363       181.7619       748.7018
+disastersubgroup
+  Infrastructure failure                                                                            1.7375          2.877        12.3855
+  Meteorological - Hydrological                                                                    201.501        91.5845       498.9145
+  Transportation accident                                                                           5.8889         5.1003        43.0108
+  Hazardous Chemicals                                                                              19.0359         3.7046        53.2596
+  Fire                                                                                              3.9751         8.8758        25.1491
+  Explosion                                                                                          2.394        13.2006        17.4054
+  Geological                                                                                        12.886        15.1535        27.9605
+  Biological                                                                                        1.8879          5.957        12.1551
+  Arson                                                                                             1.0005         1.9661         7.0334
+  Civil Incident                                                                                    1.9737         1.0058         6.0206
+  Terrorist                                                                                         1.2534              1        12.7466
+  Hijacking                                                                                              1              1              2
+  Space Event                                                                                       1.0025         1.3368         1.6607
+  [total]                                                                                         255.5363       152.7619       719.7018
+disastergroup
+  Technology                                                                                       29.0338        30.0951       147.8711
+  Natural                                                                                         214.2749        110.695       537.0301
+  Conflict                                                                                          2.2276         1.9718        24.8006
+  [total]                                                                                         245.5363       142.7619       709.7018
+disastercategory
+  Incident                                                                                         30.2614         31.067       171.6717
+  Disaster                                                                                        214.2749        110.695       537.0301
+  [total]                                                                                         244.5363       141.7619       708.7018
+magnitude
+  mean                                                                                                   0         0.5867              0
+  std. dev.                                                                                           0.74         1.9908           0.74
+
+utilitypeopleaffected
+  mean                                                                                           4200.8877     62685.1615    268328.9183
+  std. dev.                                                                                     37339.3114    463974.2796   4886752.8702
+
+start_day
+  mean                                                                                             15.2803         6.7449        14.1634
+  std. dev.                                                                                        10.0044         8.4994         9.8127
+
+start_week
+  mean                                                                                             16.3686        10.4962        30.7174
+  std. dev.                                                                                         5.4292        17.3484        13.4421
+
+start_month
+  mean                                                                                              4.1917         2.2868         6.6941
+  std. dev.                                                                                         1.2366         3.0038         3.1751
+
+start_year
+  mean                                                                                            1984.407      1965.3045      1985.5809
+  std. dev.                                                                                        25.9664        31.9366        25.8033
+
+start_weekend
+  TRUE                                                                                             54.2063        25.0265       204.7672
+  FALSE                                                                                             190.33       116.7354       503.9345
+  [total]                                                                                         244.5363       141.7619       708.7018
+start_seasoncanada
+  spring                                                                                          186.9495         7.0085        129.042
+  summer                                                                                                15         7.0149       284.9851
+  winter                                                                                           42.5868       121.7377       146.6756
+  fall                                                                                                   2          8.001        149.999
+  [total]                                                                                         246.5363       143.7619       710.7018
+start_seasoninternational
+  fall                                                                                            215.5699         7.0126        76.4175
+  winter                                                                                           21.3563         7.0149       307.6289
+  summer                                                                                            7.6101       123.7335       175.6564
+  spring                                                                                                 2          6.001        150.999
+  [total]                                                                                         246.5363       143.7619       710.7018
+end_day
+  mean                                                                                             15.6287         7.0998        15.0816
+  std. dev.                                                                                         9.9683         8.7204         9.9623
+
+end_week
+  mean                                                                                             17.5284         10.853         31.303
+  std. dev.                                                                                         5.9297        17.6563        13.2861
+
+end_month
+  mean                                                                                              4.4547         2.3064         6.8561
+  std. dev.                                                                                         1.3189         3.0277          3.165
+
+end_year
+  mean                                                                                            1984.407      1965.4106      1985.6151
+  std. dev.                                                                                        25.9664        31.8481        25.7896
+
+end_weekend
+  FALSE                                                                                           186.4812        118.476       518.0427
+  TRUE                                                                                             58.0551        23.2859        190.659
+  [total]                                                                                         244.5363       141.7619       708.7018
+end_seasoncanada
+  spring                                                                                          188.8353         6.0085       103.1562
+  summer                                                                                           22.1115         7.0149       305.8737
+  winter                                                                                           33.5895       122.7377       147.6728
+  fall                                                                                                   2          8.001        153.999
+  [total]                                                                                         246.5363       143.7619       710.7018
+end_seasoninternational
+  fall                                                                                            209.4398         6.0127        60.5475
+  winter                                                                                           29.5127         7.0149       312.4724
+  summer                                                                                            4.5837       124.7334       175.6828
+  spring                                                                                                 3          6.001        161.999
+  [total]                                                                                         246.5363       143.7619       710.7018
+estimatedtotalcost
+  mean                                                                                       84910357.3813  87456856.8832  28144966.1347
+  std. dev.                                                                                 337381732.7417 403017552.0528  27586344.0064
+
+normalizedtotalcost
+  mean                                                                                        4706430.7345   5537708.6966   1712703.2782
+  std. dev.                                                                                  16289735.7514  26467224.2441   1616266.1933
+
+federaldfaapayments
+  mean                                                                                       22407124.1561   14069622.206   7932522.9587
+  std. dev.                                                                                  88290888.5087  56092106.6489   7193327.1324
+
+provincialdfaapayments
+  mean                                                                                        2021767.4232   1929085.2072   1269589.4026
+  std. dev.                                                                                   3575948.9794   4383708.9103   1222054.7986
+
+provincialdepartmentpayments
+  mean                                                                                       18218136.3539  15149075.7981  17187945.9286
+  std. dev.                                                                                  18632349.9633   5319049.4394  13705499.4971
+
+municipalcosts
+  mean                                                                                      107561767.4141 120899479.8018 107332400.1602
+  std. dev.                                                                                  11487550.0414 166450667.3559  13656328.2952
+
+ogdcosts
+  mean                                                                                      202757907.3236 205903390.3589 203907844.2143
+  std. dev.                                                                                  46641195.4061  62536959.6176        24.0748
+
+insurancepayments
+  mean                                                                                      203886352.3746 190746910.5035 170061141.7632
+  std. dev.                                                                                 252685952.6768 135566182.1227  38777679.5214
+
+ngopayments
+  mean                                                                                             1639849   1639849.0628   1639848.9876
+  std. dev.                                                                                    370495.0616   1033718.7131       142.5679
+
+keyword1
+  crash                                                                                             5.0915         2.0121        21.8965
+  car                                                                                               1.0439         2.3145         6.6416
+  storm                                                                                            12.6683        11.2547         65.077
+  drought                                                                                           1.9994        24.0858        16.9148
+  flood                                                                                           148.2167        44.6514       263.1319
+  fire                                                                                              23.283         8.9428       125.7742
+  snow                                                                                             10.4869        15.4117        35.1014
+  injured                                                                                           3.3805              1         3.6195
+  killed                                                                                             3.207         1.9588         8.8342
+  explosion                                                                                          5.062        12.9273        15.0107
+  ice                                                                                              10.1482         3.0059         20.846
+  damage                                                                                            1.0014         4.1198         6.8788
+  derail                                                                                            4.5147         1.4067        18.0785
+  rain                                                                                              4.5967         4.0547        24.3486
+  landslide                                                                                         3.9975              1         1.0025
+  tornado                                                                                           1.7355         1.0207        10.2438
+  evacuate                                                                                          3.7995         2.9934        16.2071
+  pollution                                                                                         2.0004         1.0002         4.9994
+  spill                                                                                             2.8674         2.0051         8.1274
+  water                                                                                             4.7333         1.0511        11.2156
+  wind                                                                                              3.8574         3.2976         17.845
+  earthquake                                                                                             1         8.9985         1.0015
+  avalanche                                                                                         2.9876         3.2492        11.7632
+  hurricane                                                                                         2.9994              1        13.0006
+  virus                                                                                             1.8879         1.9999         1.1122
+  temperature                                                                                            1              1              2
+  hail                                                                                              1.9703              1         3.0297
+  [total]                                                                                         269.5363       166.7619       733.7018
+keyword2
+  wind                                                                                              7.1801          3.186        46.6339
+  storm                                                                                            77.6998        76.6653       303.6349
+  evacuate                                                                                         13.3283         3.2418          40.43
+  killed                                                                                            4.7399         11.318        26.9422
+  water                                                                                            28.5002        16.7981        44.7018
+  landslide                                                                                         2.1146              2         8.8854
+  car                                                                                               2.8801          2.002        12.1179
+  ice                                                                                              29.1875         5.6035        36.2089
+  injured                                                                                            4.427         2.1386        20.4344
+  avalanche                                                                                          2.913         3.7197         3.3674
+  rain                                                                                             23.1373         2.7323        59.1304
+  snow                                                                                             31.5328         7.4123         23.055
+  explosion                                                                                          1.125         2.1111        10.7639
+  damage                                                                                           16.9239         6.7949        29.2812
+  tornado                                                                                                2              1              9
+  spill                                                                                             4.9841         1.4048         6.6111
+  temperature                                                                                       1.9985         4.7822         4.2192
+  crash                                                                                                  1              1              6
+  pollution                                                                                         1.5895              1         2.4105
+  hail                                                                                                   1         1.6704         7.3295
+  derail                                                                                            2.2787              1         4.7213
+  lightning                                                                                         2.0003         1.0207          4.979
+  plane                                                                                                  1              1              5
+  earthquake                                                                                             1              4              2
+  fire                                                                                              2.3066         1.1604         8.5331
+  flood                                                                                                  1              1              5
+  train                                                                                             1.6891              1         2.3109
+  [total]                                                                                         269.5363       166.7619       733.7018
+keyword3
+  wind                                                                                               6.845         9.3881        34.7669
+  ice                                                                                              17.2803         1.9163        25.8033
+  car                                                                                               4.4327         2.8424        15.7249
+  temperature                                                                                       7.2228         4.2375         4.5397
+  injured                                                                                           3.8486         2.9959        13.1554
+  damage                                                                                           17.8573         7.6348        43.5079
+  train                                                                                             2.5679         3.0554         8.3767
+  rain                                                                                            129.3172       105.0615       443.6213
+  landslide                                                                                         1.9723              2         2.0277
+  evacuate                                                                                          28.473         2.1423        46.3848
+  hail                                                                                              2.9054         1.0207         9.0739
+  water                                                                                            21.3224         2.6356         36.042
+  plane                                                                                             3.1777              1         5.8223
+  killed                                                                                            1.0004         3.9732         6.0265
+  spill                                                                                             2.2786              1         4.7214
+  tornado                                                                                                2              1              9
+  storm                                                                                             4.0344         2.7424         8.2232
+  avalanche                                                                                              1              2              1
+  derail                                                                                            1.0002         1.9555         3.0442
+  lightning                                                                                              3              1              3
+  crash                                                                                                  2              1              2
+  snow                                                                                                   1         1.1603         2.8397
+  [total]                                                                                         264.5363       161.7619       728.7018
+
+
+Time taken to build model (full training data) : 4.39 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0        46 (  4%)
+1        29 (  3%)
+2      1014 ( 93%)
+
+
+Log likelihood: -232.49984
+
