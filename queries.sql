@@ -1,118 +1,56 @@
--- 1 TOTAL COST PER EVENT TYPE, THEN ROLLED UP TO ALL EVENTS (UNFORTUNATELY NOT ROLLED DOWN TO SINGLE EVENTS BECAUSE FACT TABLE DOESN'T HAVE ID COLUMN- TOO TEDIOUS OTHERWISE)
+-- a) TOTAL COST OF ALL EVENTS, DRILLED DOWN TO TOTAL COST OF EACH DISASTER TYPE
 SELECT disastertype, GROUPING(disastertype), SUM(estimatedtotalcost) AS estimatedtotalcost
 FROM fact
 JOIN costs ON fact.costkey = costs.costskey
 JOIN disaster ON fact.disasterkey = disaster.disasterkey
 GROUP BY ROLLUP(disastertype)
-ORDER BY grouping, estimatedtotalcost;
--- 1 TOTAL COST
-SELECT SUM(estimatedtotalcost) AS estimatedtotalcost
-FROM fact
-JOIN costs ON fact.costkey = costs.costskey;
--- 1 TOTAL COST PER EVENT TYPE
-SELECT disastertype, SUM(estimatedtotalcost) AS estimatedtotalcost
-FROM fact
-JOIN costs ON fact.costkey = costs.costskey
-JOIN disaster ON fact.disasterkey = disaster.disasterkey
-GROUP BY disastertype;
--- 1 TOTAL COST PER EVENT
-SELECT estimatedtotalcost
-FROM fact 
-JOIN costs ON fact.costkey = costs.costskey;
+ORDER BY grouping DESC;
 
--- 2 NUMBER OF EVENTS OR NUMBER OF EVENT TYPE AT CITY, THEN ROLLED UP TO PROVINCE, THEN ROLLED UP TO COUNTRY (NOT COMPLETELY SURE IF YOU GUYS WANT THIS)
+-- b) NUMBER OF EVENTS OR NUMBER OF EVENT TYPE AT CITY, THEN ROLLED UP TO PROVINCE, THEN ROLLED UP TO COUNTRY (NOT COMPLETELY SURE IF YOU GUYS WANT THIS)
 SELECT country, province, city, disastertype, COUNT(*)
 FROM fact
 JOIN disaster ON fact.disasterkey = disaster.disasterkey
 JOIN location ON fact.locationkey = location.locationkey
 GROUP BY GROUPING SETS((country, disastertype), (country, province, disastertype), ROLLUP(country, province, city, disastertype))
 ORDER BY country, province, city, disastertype;
--- 2 NUMBER OF EVENT TYPE AT COUNTRY
-SELECT disastertype, country, COUNT(*)
-FROM fact
-JOIN disaster ON fact.disasterkey = disaster.disasterkey
-JOIN location ON fact.locationkey = location.locationkey
-GROUP BY disastertype, country;
--- 2 NUMBER OF EVENT TYPE AT PROVINCE
-SELECT disastertype, province, COUNT(*)
-FROM fact
-JOIN disaster ON fact.disasterkey = disaster.disasterkey
-JOIN location ON fact.locationkey = location.locationkey
-GROUP BY disastertype, province;
--- 2 NUMBER OF EVENT TYPE AT CITY
-SELECT disastertype, city, COUNT(*)
-FROM fact
-JOIN disaster ON fact.disasterkey = disaster.disasterkey
-JOIN location ON fact.locationkey = location.locationkey
-GROUP BY disastertype, city;
--- 2 EVENTS AT COUNTRY
-SELECT country, COUNT(*)
-FROM fact
-JOIN location ON fact.locationkey = location.locationkey
-GROUP BY country;
--- 2 EVENTS AT PROVINCE
-SELECT province, COUNT(*)
-FROM fact
-JOIN location ON fact.locationkey = location.locationkey
-GROUP BY province;
--- 2 EVENTS AT CITY
-SELECT city, COUNT(*)
-FROM fact
-JOIN location ON fact.locationkey = location.locationkey
-GROUP BY city;
 
--- 3 NUMBER OF EVACUATEE, FATALITIES, INJURED IN YEAR OR YEAR AND MONTH AT CITY, THEN ROLLED UP TO PROVINCE, THEN ROLLED UP TO COUNTRY (DIDN'T INCLUDE TOTAL EVACUTED, TOTAL FATALITIES, AND INJURED)
+-- b) NUMBER OF EVACUATEE, FATALITIES, INJURED IN YEAR OR YEAR AND MONTH AT CITY, THEN ROLLED UP TO PROVINCE, THEN ROLLED UP TO COUNTRY
 SELECT country, province, city, year, month, SUM(evacuated) AS evacuated, sum(fatalities) AS fatalities, sum(injured) AS injured
 FROM fact
 JOIN date ON fact.enddatekey = date.datekey
 JOIN location ON fact.locationkey = location.locationkey
 GROUP BY GROUPING SETS((country, province, city, year), (country, province, year), (country, year), (country, province, city, year, month), (country, province, year, month), (country, year, month))
 ORDER BY country, province, city, year, month;
--- 3 NUMBER OF EVACUATEE, FATALITIES, INJURED IN YEAR AT COUNTRY
-SELECT SUM(evacuated) AS evacuated, sum(fatalities) AS fatalities, sum(injured) AS injured, year, country
-FROM fact
-JOIN date ON fact.enddatekey = date.datekey
-JOIN location ON fact.locationkey = location.locationkey
-GROUP BY year, country;
--- 3 NUMBER OF EVACUATEE, FATALITIES, INJURED IN YEAR AT PROVINCE
-SELECT SUM(evacuated) AS evacuated, sum(fatalities) AS fatalities, sum(injured) AS injured, year, province
-FROM fact
-JOIN date ON fact.enddatekey = date.datekey
-JOIN location ON fact.locationkey = location.locationkey
-GROUP BY year, province;
--- 3 NUMBER OF EVACUATEE, FATALITIES, INJURED IN YEAR AT CITY
-SELECT SUM(evacuated) AS evacuated, sum(fatalities) AS fatalities, sum(injured) AS injured, year, city
-FROM fact
-JOIN date ON fact.enddatekey = date.datekey
-JOIN location ON fact.locationkey = location.locationkey
-GROUP BY year, city;
--- 3 NUMBER OF EVACUATEE, FATALITIES, INJURED IN MONTH AT COUNTRY
-SELECT SUM(evacuated) AS evacuated, sum(fatalities) AS fatalities, sum(injured) AS injured, month, country
-FROM fact
-JOIN date ON fact.enddatekey = date.datekey
-JOIN location ON fact.locationkey = location.locationkey
-GROUP BY month, country;
--- 3 NUMBER OF EVACUATEE, FATALITIES, INJURED IN MONTH AT PROVINCE
-SELECT SUM(evacuated) AS evacuated, sum(fatalities) AS fatalities, sum(injured) AS injured, month, province
-FROM fact
-JOIN date ON fact.enddatekey = date.datekey
-JOIN location ON fact.locationkey = location.locationkey
-GROUP BY month, province;
--- 3 NUMBER OF EVACUATEE, FATALITIES, INJURED IN MONTH AT CITY
-SELECT SUM(evacuated) AS evacuated, sum(fatalities) AS fatalities, sum(injured) AS injured, month, city
-FROM fact
-JOIN date ON fact.enddatekey = date.datekey
-JOIN location ON fact.locationkey = location.locationkey
-GROUP BY month, city;
 
--- 4 EVENT TYPE OCCURANCES
+-- c) NUMBER OF EACH DISASTER TYPE IN ONTARIO SLICE
+SELECT DISTINCT disaster.disastertype, coalesce(t.province, 'Ontario'), coalesce(count, 0)
+FROM fact
+JOIN disaster ON fact.disasterkey = disaster.disasterkey
+JOIN location ON fact.locationkey = location.locationkey
+LEFT JOIN (SELECT disastertype, province, COUNT(*) as count
+	  FROM fact
+	  JOIN disaster ON fact.disasterkey = disaster.disasterkey
+	  JOIN location ON fact.locationkey = location.locationkey
+	  WHERE province = 'Ontario'
+	  GROUP BY disastertype, province) as t ON disaster.disastertype = t.disastertype
+
+-- d) NUMBER OF FLOODS IN TORONTO DICE
+SELECT disastertype, city, COUNT(*)
+FROM fact
+JOIN disaster ON fact.disasterkey = disaster.disasterkey
+JOIN location ON fact.locationkey = location.locationkey
+WHERE disastertype = 'Flood' AND city = 'Toronto'
+GROUP BY disastertype, city;
+
+-- e) TOP 5 MOST FREQUENT DISASTER TYPE
 SELECT disastertype, COUNT(*)
 FROM fact
 JOIN disaster ON fact.disasterkey = disaster.disasterkey
 GROUP BY disastertype
 ORDER BY COUNT DESC
 LIMIT 5;
--- 4 EVENT TYPE COST
+
+-- e) TOP 5 MOST EXPENSIVE DISASTER TYPE
 SELECT disastertype, SUM(estimatedtotalcost) AS estimatedtotalcost
 FROM fact
 JOIN disaster ON fact.disasterkey = disaster.disasterkey
